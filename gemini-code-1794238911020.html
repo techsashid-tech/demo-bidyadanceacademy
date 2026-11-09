@@ -1,0 +1,2518 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bidya Odissi Dance Academy | Mahanadivihar, Odisha — Classical Odissi Institution</title>
+    <meta name="description" content="Bidya Odissi Dance Academy near Savarmati Hospital, Mahanadivihar, Odisha. Premier classical Odissi dance institution dedicated to preserving sacred temple dance traditions, Tribhangi, Chowka, Mudras, and Abhinaya.">
+    <meta name="keywords" content="Bidya Odissi Dance Academy, Odissi Dance Mahanadivihar, Savarmati Hospital Mahanadivihar, Odisha Classical Dance, Odissi Guru, Tribhangi, Chowka, Abhinaya, Classical Dance Classes Odisha">
+    <meta property="og:title" content="Bidya Odissi Dance Academy | Mahanadivihar, Odisha">
+    <meta property="og:description" content="Where Tradition Becomes an Art. Experience authentic classical Odissi training in Mahanadivihar, Odisha.">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts Inspired by Nrityashastra + Stylish Developer Fonts (Orbitron & Syne) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Orbitron:wght@500;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* ==========================================================================
+           NRITYASHASTRA-INSPIRED THEME ENGINE (DARK & LIGHT MODE CSS VARIABLES)
+           ========================================================================== */
+        :root,
+        html[data-theme="dark"] {
+            --bg-primary: #110406;
+            --bg-secondary: #1b070b;
+            --bg-tertiary: #270b12;
+            --bg-glass: rgba(29, 8, 13, 0.78);
+            --bg-glass-strong: rgba(19, 4, 8, 0.92);
+            --bg-input: rgba(15, 3, 6, 0.85);
+            --text-primary: #fdf8f2;
+            --text-secondary: #e2d1c3;
+            --text-muted: #b39886;
+            --heading-color: #f7e3a8;
+            --accent-gold: #d4af37;
+            --accent-gold-bright: #f5dc86;
+            --accent-gold-deep: #aa7c11;
+            --accent-crimson: #9e2a3b;
+            --border-gold: rgba(212, 175, 55, 0.34);
+            --border-gold-strong: rgba(245, 220, 134, 0.72);
+            --shadow-card: 0 20px 45px rgba(0, 0, 0, 0.65);
+            --shadow-glow: 0 0 32px rgba(212, 175, 55, 0.25);
+            --hero-vignette: radial-gradient(circle at 42% 48%, rgba(182, 34, 24, 0.84) 0%, rgba(132, 18, 14, 0.90) 48%, rgba(62, 6, 8, 0.96) 100%);
+            --pattern-opacity: 0.06;
+        }
+
+        html[data-theme="light"] {
+            --bg-primary: #ffffff;
+            --bg-secondary: #fbf7f4;
+            --bg-tertiary: #f3eae2;
+            --bg-glass: rgba(255, 255, 255, 0.92);
+            --bg-glass-strong: rgba(255, 255, 255, 0.98);
+            --bg-input: #ffffff;
+            --text-primary: #2d181b;
+            --text-secondary: #5a3439;
+            --text-muted: #82585e;
+            --heading-color: #7b1824;
+            --accent-gold: #9e2a3b;
+            --accent-gold-bright: #b8861b;
+            --accent-gold-deep: #7a1824;
+            --accent-crimson: #9e3346;
+            --border-gold: rgba(158, 51, 70, 0.26);
+            --border-gold-strong: rgba(158, 51, 70, 0.68);
+            --shadow-card: 0 18px 40px rgba(123, 24, 36, 0.10);
+            --shadow-glow: 0 0 28px rgba(158, 51, 70, 0.20);
+            --hero-vignette: radial-gradient(circle at 42% 48%, rgba(188, 36, 25, 0.86) 0%, rgba(136, 19, 14, 0.91) 50%, rgba(68, 7, 9, 0.95) 100%);
+            --pattern-opacity: 0.05;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+            transition: background-color 0.45s cubic-bezier(0.4, 0, 0.2, 1), color 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .font-display {
+            font-family: 'Cinzel Decorative', serif;
+        }
+
+        .font-serif-luxury {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .font-script-nritya {
+            font-family: 'Great Vibes', cursive;
+        }
+
+        .font-cyber-luxury {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        /* ==========================================================================
+           GLOBAL LIGHT-PASS EFFECT ENGINE (FOR CLIENT APPRECIATION)
+           ========================================================================== */
+        /* 1. Ambient Full-Website Diagonal Light Sweep Overlay */
+        .global-light-pass-overlay {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 35;
+            overflow: hidden;
+        }
+        .global-light-pass-overlay::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -120%;
+            width: 55%;
+            height: 200%;
+            background: linear-gradient(
+                90deg,
+                transparent 0%,
+                rgba(255, 238, 175, 0.03) 35%,
+                rgba(255, 246, 210, 0.09) 50%,
+                rgba(255, 238, 175, 0.03) 65%,
+                transparent 100%
+            );
+            transform: rotate(25deg);
+            animation: globalAmbientLightSweep 9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        }
+        @keyframes globalAmbientLightSweep {
+            0% { left: -120%; }
+            55%, 100% { left: 160%; }
+        }
+
+        /* 2. Interactive & Continuous Light-Pass Sheen on Cards, Containers & Buttons */
+        .light-pass,
+        .theme-glass,
+        .program-card,
+        .action-hub-card,
+        .social-pill-btn,
+        .btn-gold-luxury {
+            position: relative;
+            overflow: hidden;
+        }
+        .light-pass::after,
+        .theme-glass::after,
+        .program-card::after,
+        .action-hub-card::after,
+        .social-pill-btn::after,
+        .btn-gold-luxury::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -130%;
+            width: 65%;
+            height: 100%;
+            background: linear-gradient(
+                115deg,
+                transparent 0%,
+                rgba(255, 255, 255, 0.04) 30%,
+                rgba(255, 245, 200, 0.26) 50%,
+                rgba(255, 255, 255, 0.04) 70%,
+                transparent 100%
+            );
+            transform: skewX(-25deg);
+            transition: left 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+            pointer-events: none;
+            z-index: 5;
+        }
+        .light-pass:hover::after,
+        .theme-glass:hover::after,
+        .program-card:hover::after,
+        .action-hub-card:hover::after,
+        .social-pill-btn:hover::after,
+        .btn-gold-luxury:hover::after {
+            left: 150%;
+        }
+
+        /* Automatic Periodic Light Pass for Featured Elements */
+        .auto-light-pass::after {
+            animation: periodicCardLightPass 5.5s ease-in-out infinite;
+        }
+        @keyframes periodicCardLightPass {
+            0% { left: -130%; }
+            38%, 100% { left: 155%; }
+        }
+
+        /* Nrityashastra Reference Crimson-Terracotta Studio Canvas Effect */
+        .nritya-crimson-backdrop {
+            background:
+                radial-gradient(circle at 38% 45%, rgba(214, 48, 31, 0.72) 0%, rgba(153, 22, 16, 0.86) 46%, rgba(74, 8, 8, 0.95) 100%),
+                repeating-radial-gradient(circle at 25% 35%, rgba(255, 190, 140, 0.035) 0px, rgba(0, 0, 0, 0.04) 3px, transparent 6px);
+            box-shadow: inset 0 0 130px rgba(20, 2, 3, 0.85);
+        }
+
+        /* ==========================================================================
+           SCREENSHOT 1 STYLISH QUICK-ACTION HUB CARDS & FLOATING PILLS
+           ========================================================================== */
+        .action-hub-card {
+            border-radius: 1.35rem;
+            padding: 1.6rem 1.5rem;
+            transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease, filter 0.35s ease;
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            box-shadow: 0 18px 38px rgba(0, 0, 0, 0.52), inset 0 1px 1px rgba(255, 255, 255, 0.25);
+        }
+        .action-hub-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            filter: brightness(1.08);
+        }
+        .action-card-call {
+            background: linear-gradient(135deg, #9e2f37 0%, #7d2027 100%);
+            box-shadow: 0 18px 38px rgba(158, 47, 55, 0.38);
+        }
+        .action-card-whatsapp {
+            background: linear-gradient(135deg, #548c60 0%, #3d6d48 100%);
+            box-shadow: 0 18px 38px rgba(84, 140, 96, 0.38);
+        }
+        .action-card-directions {
+            background: linear-gradient(135deg, #4b43bd 0%, #372f9c 100%);
+            box-shadow: 0 18px 38px rgba(75, 67, 189, 0.38);
+        }
+        .action-card-consultation {
+            background: linear-gradient(135deg, #c65822 0%, #9f4012 100%);
+            box-shadow: 0 18px 38px rgba(198, 88, 34, 0.38);
+        }
+        .action-icon-box {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.85rem;
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 1.25rem;
+            margin-bottom: 1.35rem;
+            box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.35);
+            transition: transform 0.35s ease;
+        }
+        .action-hub-card:hover .action-icon-box {
+            transform: scale(1.12) rotate(-6deg);
+        }
+
+        /* Verified Destination Badge (From Screenshot 1) */
+        .verified-destination-pill {
+            background: linear-gradient(90deg, rgba(24, 24, 29, 0.95) 0%, rgba(45, 38, 25, 0.92) 78%, rgba(198, 162, 66, 0.95) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.45);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55);
+        }
+
+        /* Right-Side Floating Social & Action Pills (From Screenshot 1) */
+        .social-pill-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.58rem 1.15rem;
+            border-radius: 9999px;
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #ffffff;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.55), inset 0 1px 1px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease, filter 0.3s ease;
+            min-width: 142px;
+            justify-content: flex-start;
+        }
+        .social-pill-btn:hover {
+            transform: translateX(-6px) scale(1.04);
+            filter: brightness(1.1);
+        }
+        .pill-ig {
+            background: linear-gradient(90deg, #d64c6b 0%, #e47c4e 100%);
+        }
+        .pill-fb {
+            background: linear-gradient(90deg, #517ce8 0%, #6894f5 100%);
+        }
+        .pill-x {
+            background: linear-gradient(90deg, #1b2230 0%, #2b3548 100%);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        .pill-yt {
+            background: linear-gradient(90deg, #cf3930 0%, #b82921 100%);
+        }
+        .pill-wa-chat {
+            background: linear-gradient(90deg, #57b869 0%, #489e58 100%);
+            text-transform: none;
+            font-size: 0.76rem;
+            letter-spacing: 0.03em;
+        }
+        .pill-call-store {
+            background: linear-gradient(90deg, #b83a43 0%, #982932 100%);
+            text-transform: none;
+            font-size: 0.76rem;
+            letter-spacing: 0.03em;
+        }
+
+        /* ==========================================================================
+           UPGRADED 3D ANIMATED DEVELOPER SIGNATURE CARD (SCREENSHOT 2 & 3 COMBINED)
+           ========================================================================== */
+        .dev-3d-wrapper {
+            perspective: 1200px;
+        }
+        .dev-3d-card {
+            position: relative;
+            transform-style: preserve-3d;
+            background: linear-gradient(135deg, #4b1519 0%, #221712 48%, #1e1916 75%, #4a161b 100%);
+            border: 1.5px solid rgba(235, 198, 107, 0.65);
+            box-shadow:
+                0 20px 45px rgba(0, 0, 0, 0.8),
+                0 0 32px rgba(212, 175, 55, 0.32),
+                inset 0 1px 2px rgba(255, 255, 255, 0.35);
+            animation: devFloat3D 4.5s ease-in-out infinite;
+            transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s ease, border-color 0.45s ease;
+            overflow: hidden;
+        }
+        .dev-3d-card::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -75%;
+            width: 50%;
+            height: 200%;
+            background: linear-gradient(90deg, transparent, rgba(255, 243, 189, 0.45), transparent);
+            transform: rotate(25deg);
+            animation: devAutoLightPass 4.2s ease-in-out infinite;
+            pointer-events: none;
+        }
+        @keyframes devAutoLightPass {
+            0% { left: -75%; }
+            45%, 100% { left: 145%; }
+        }
+        .dev-3d-card:hover {
+            animation-play-state: paused;
+            transform: rotateX(8deg) rotateY(-8deg) translateY(-6px) scale(1.03);
+            border-color: #fff3b8;
+            box-shadow:
+                -12px 22px 44px rgba(0, 0, 0, 0.88),
+                0 0 44px rgba(245, 220, 134, 0.75),
+                0 0 18px rgba(214, 48, 31, 0.65);
+        }
+        .dev-passion-subtitle {
+            transform: translateZ(20px);
+            color: #d6a94a;
+            letter-spacing: 0.28em;
+            font-weight: 700;
+        }
+        .dev-3d-title {
+            transform: translateZ(28px);
+            background: linear-gradient(90deg, #fff8de 0%, #f5d372 30%, #ffffff 50%, #e5b23a 70%, #fff8de 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+            animation: devTextShine 3.2s linear infinite;
+        }
+        .dev-number-pill {
+            transform: translateZ(24px);
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.18) 0%, rgba(15, 5, 7, 0.85) 100%);
+            border: 1px solid rgba(245, 220, 134, 0.65);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5), inset 0 0 12px rgba(212, 175, 55, 0.25);
+            transition: all 0.3s ease;
+        }
+        .dev-number-pill:hover {
+            background: linear-gradient(135deg, #f3d77d 0%, #c59624 100%);
+            color: #160407 !important;
+            transform: translateZ(30px) scale(1.06);
+            box-shadow: 0 0 25px rgba(245, 220, 134, 0.85);
+        }
+        .dev-number-pill:hover span,
+        .dev-number-pill:hover i {
+            color: #160407 !important;
+            -webkit-text-fill-color: #160407 !important;
+        }
+        .dev-phone-glow-text {
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(90deg, #fff5c0 0%, #ffd452 50%, #ffffff 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: devTextShine 2.8s linear infinite;
+        }
+        @keyframes devFloat3D {
+            0%, 100% { transform: translateY(0px) rotateX(2deg) rotateY(-2deg); }
+            50% { transform: translateY(-5px) rotateX(-2deg) rotateY(2deg); }
+        }
+        @keyframes devTextShine {
+            to { background-position: 200% center; }
+        }
+
+        /* Theme-aware Utility Classes */
+        .theme-bg-primary { background-color: var(--bg-primary); }
+        .theme-bg-secondary { background-color: var(--bg-secondary); }
+        .theme-bg-tertiary { background-color: var(--bg-tertiary); }
+        .theme-glass {
+            background: var(--bg-glass);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-gold);
+            box-shadow: var(--shadow-card);
+        }
+        .theme-glass-strong {
+            background: var(--bg-glass-strong);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border-gold);
+        }
+        .theme-heading { color: var(--heading-color); }
+        .theme-text-primary { color: var(--text-primary); }
+        .theme-text-secondary { color: var(--text-secondary); }
+        .theme-text-muted { color: var(--text-muted); }
+        .theme-gold { color: var(--accent-gold); }
+        .theme-border { border-color: var(--border-gold); }
+
+        .theme-input {
+            background-color: var(--bg-input);
+            color: var(--text-primary);
+            border: 1px solid var(--border-gold);
+            transition: all 0.3s ease;
+        }
+        .theme-input:focus {
+            outline: none;
+            border-color: var(--border-gold-strong);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+        }
+
+        /* 3D Metallic Gold Text Effect */
+        .gold-3d-text {
+            background: linear-gradient(180deg, #fff6d1 0%, #f1cf6d 42%, #c99722 78%, #f8e39c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+        }
+
+        /* Ornate Odissi Filigree Background Pattern */
+        .odissi-motif-bg {
+            background-image: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, var(--pattern-opacity)) 1px, transparent 1px),
+                              radial-gradient(circle at 0% 100%, rgba(212, 175, 55, var(--pattern-opacity)) 2px, transparent 2px);
+            background-size: 44px 44px;
+        }
+
+        /* ==========================================================================
+           HERO MULTI-SLIDE CINEMATIC SHOWCASE
+           ========================================================================== */
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 1.35s cubic-bezier(0.4, 0, 0.2, 1), visibility 1.35s ease;
+            z-index: 1;
+        }
+        .hero-slide.active {
+            opacity: 1;
+            visibility: visible;
+            z-index: 2;
+        }
+        .hero-slide-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 18%;
+            transform: scale(1.02);
+            filter: contrast(1.16) saturate(1.12) brightness(0.84);
+            transition: transform 8.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .hero-slide.active .hero-slide-img {
+            transform: scale(1.13);
+        }
+
+        /* Right-side Hero Stage Stack Cards */
+        .hero-stage-card {
+            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .hero-stage-card:hover {
+            transform: translateY(-8px) scale(1.02);
+        }
+
+        /* ==========================================================================
+           3D CIRCULAR ROTATING GLASS GALLERY
+           ========================================================================== */
+        .gallery-viewport {
+            perspective: 1800px;
+            width: 100%;
+            height: 520px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            user-select: none;
+        }
+        .gallery-ring {
+            width: 270px;
+            height: 375px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.08s linear;
+        }
+        @media (max-width: 640px) {
+            .gallery-viewport { height: 430px; }
+            .gallery-ring { width: 215px; height: 300px; }
+        }
+        .gallery-item-3d {
+            position: absolute;
+            inset: 0;
+            border-radius: 1.15rem;
+            overflow: hidden;
+            border: 1.5px solid var(--border-gold-strong);
+            background: rgba(20, 4, 8, 0.82);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65), inset 0 0 22px rgba(212, 175, 55, 0.22);
+            cursor: pointer;
+            transition: border-color 0.35s ease, box-shadow 0.35s ease;
+        }
+        .gallery-item-3d:hover {
+            border-color: #fff0b3;
+            box-shadow: 0 0 38px rgba(212, 175, 55, 0.75);
+        }
+
+        /* Fallback Theater Mode when Fullscreen API is blocked by iframe permissions policy */
+        .video-theater-fallback {
+            position: fixed !important;
+            inset: 1rem !important;
+            z-index: 95 !important;
+            max-width: none !important;
+            width: calc(100vw - 2rem) !important;
+            height: calc(100vh - 2rem) !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+            background: rgba(10, 2, 4, 0.98) !important;
+        }
+
+        /* 3D Interactive Program Cards */
+        .program-card {
+            transform-style: preserve-3d;
+            transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+        }
+        .program-card:hover {
+            transform: translateY(-10px) rotateX(2deg);
+            border-color: var(--border-gold-strong);
+            box-shadow: var(--shadow-glow), var(--shadow-card);
+        }
+
+        /* Golden Shimmer Button */
+        .btn-gold-luxury {
+            background: linear-gradient(135deg, #c59624 0%, #f3d77d 50%, #b58416 100%);
+            background-size: 200% auto;
+            color: #1c0509;
+            font-weight: 700;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 28px rgba(212, 175, 55, 0.32);
+        }
+        .btn-gold-luxury:hover {
+            background-position: right center;
+            transform: translateY(-2px);
+            box-shadow: 0 14px 34px rgba(212, 175, 55, 0.52);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: var(--bg-secondary); }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #d4af37, #8a640f);
+            border-radius: 9999px;
+        }
+
+        /* Scroll Reveal Animation */
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .reveal-up.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Konark Chakra Slow Spin */
+        @keyframes spinSlow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .animate-spin-slow {
+            animation: spinSlow 28s linear infinite;
+        }
+    </style>
+</head>
+<body class="odissi-motif-bg selection:bg-amber-500 selection:text-black">
+
+    <!-- ==========================================================================
+         GLOBAL AMBIENT LIGHT-PASS SHIMMER OVERLAY (ENTIRE WEBSITE)
+         ========================================================================== -->
+    <div class="global-light-pass-overlay" aria-hidden="true"></div>
+
+    <!-- ==========================================================================
+         3. PREMIUM PRELOADER WITH KONARK CHAKRA MOTIF
+         ========================================================================== -->
+    <div id="preloader" class="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#0f0306] text-amber-300 transition-opacity duration-700">
+        <div class="relative w-32 h-32 flex items-center justify-center mb-6">
+            <!-- Rotating Traditional Konark Chakra SVG -->
+            <svg class="w-full h-full animate-spin-slow text-amber-400/85" viewBox="0 0 100 100" fill="none">
+                <circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="2" stroke-dasharray="4 3"/>
+                <circle cx="50" cy="50" r="38" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="50" cy="50" r="12" stroke="currentColor" stroke-width="2"/>
+                <g stroke="currentColor" stroke-width="1.5">
+                    <line x1="50" y1="4" x2="50" y2="96"/>
+                    <line x1="4" y1="50" x2="96" y2="50"/>
+                    <line x1="17.5" y1="17.5" x2="82.5" y2="82.5"/>
+                    <line x1="82.5" y1="17.5" x2="17.5" y2="82.5"/>
+                </g>
+            </svg>
+            <span class="absolute font-display text-2xl font-bold text-amber-200">ॐ</span>
+        </div>
+        <h2 class="font-display text-xl sm:text-2xl tracking-[0.28em] text-center gold-3d-text px-4">BIDYA ODISSI DANCE ACADEMY</h2>
+        <p class="font-serif-luxury italic text-amber-200/75 text-base mt-1 tracking-widest">Mahanadivihar • Odisha • India</p>
+    </div>
+
+    <!-- ==========================================================================
+         13. FLOATING SOCIAL MEDIA & INSTANT ACTION PILL BUTTONS (SCREENSHOT 1 STYLE)
+         ========================================================================== -->
+    <!-- Top-Right Social Pill Stack (Instagram, Facebook, X, YouTube) -->
+    <div class="fixed right-3 top-1/3 -translate-y-1/2 z-40 hidden md:flex flex-col items-end gap-2.5">
+        <a id="floating-ig" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+           class="social-pill-btn pill-ig auto-light-pass">
+            <i class="fa-brands fa-instagram text-base"></i>
+            <span>INSTAGRAM</span>
+        </a>
+        <a id="floating-fb" href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+           class="social-pill-btn pill-fb">
+            <i class="fa-brands fa-facebook-f text-base"></i>
+            <span>FACEBOOK</span>
+        </a>
+        <a id="floating-x" href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X Twitter"
+           class="social-pill-btn pill-x">
+            <i class="fa-brands fa-x-twitter text-base"></i>
+            <span>X (TWITTER)</span>
+        </a>
+        <a id="floating-yt" href="#videos" aria-label="YouTube & Videos"
+           class="social-pill-btn pill-yt">
+            <i class="fa-brands fa-youtube text-base"></i>
+            <span>YOUTUBE</span>
+        </a>
+    </div>
+
+    <!-- Bottom-Right Instant Action Pill Stack (WhatsApp Chat & Call Academy) -->
+    <div class="fixed right-3 bottom-5 z-40 flex flex-col items-end gap-2.5">
+        <a href="https://wa.me/918277754614?text=Namaste%20Bidya%20Odissi%20Dance%20Academy,%20I%20would%20like%20to%20enquire%20about%20Odissi%20dance%20classes."
+           target="_blank" rel="noopener noreferrer"
+           aria-label="WhatsApp Chat"
+           class="social-pill-btn pill-wa-chat auto-light-pass">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>WhatsApp Chat</span>
+        </a>
+        <a href="tel:+918277754614"
+           aria-label="Call Academy"
+           class="social-pill-btn pill-call-store auto-light-pass">
+            <i class="fa-solid fa-phone-volume text-sm"></i>
+            <span>Call Academy</span>
+        </a>
+    </div>
+
+    <!-- ==========================================================================
+         16. STICKY REGAL NAVIGATION BAR WITH NRITYASHASTRA TOP CRIMSON BAR
+         ========================================================================== -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 theme-glass-strong transition-all duration-300 shadow-lg">
+        <!-- Top Rose-Crimson Accent Strip Inspired by Reference -->
+        <div class="h-2 w-full bg-gradient-to-r from-[#8b2639] via-[#a63446] to-[#8b2639]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Identity -->
+            <a href="#home" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-full border-2 border-amber-500/80 flex items-center justify-center bg-gradient-to-br from-[#8b1e29] to-[#2b0408] text-amber-200 font-display font-bold text-lg shadow-md group-hover:rotate-12 transition">
+                    बो
+                </div>
+                <div>
+                    <span class="block font-display text-sm sm:text-base md:text-lg font-bold tracking-[0.15em] theme-heading">BIDYA ODISSI</span>
+                    <span class="block text-[10px] tracking-[0.24em] uppercase theme-text-muted">Dance Academy • Odisha</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden xl:flex items-center gap-6 text-xs font-semibold tracking-[0.16em] uppercase">
+                <a href="#home" class="theme-gold hover:opacity-80 transition">Home</a>
+                <a href="#about" class="theme-text-primary hover:text-amber-400 transition">About</a>
+                <a href="#guru" class="theme-text-primary hover:text-amber-400 transition">Our Guru</a>
+                <a href="#classes" class="theme-text-primary hover:text-amber-400 transition">Classes</a>
+                <a href="#gallery" class="theme-text-primary hover:text-amber-400 transition">Gallery</a>
+                <a href="#videos" class="theme-text-primary hover:text-amber-400 transition">Videos</a>
+                <a href="#performances" class="theme-text-primary hover:text-amber-400 transition">Performances</a>
+                <a href="#admission" class="theme-text-primary hover:text-amber-400 transition">Admission</a>
+                <a href="#contact" class="theme-text-primary hover:text-amber-400 transition">Contact</a>
+            </nav>
+
+            <!-- Theme Switcher & Mobile Menu Trigger -->
+            <div class="flex items-center gap-3">
+                <button id="theme-toggle-btn"
+                        type="button"
+                        aria-label="Toggle Dark or Light Mode"
+                        class="px-3.5 py-2 rounded-full theme-glass flex items-center gap-2 text-xs font-semibold tracking-wider uppercase theme-gold hover:border-amber-400 transition">
+                    <i id="theme-toggle-icon" class="fa-solid fa-sun text-sm"></i>
+                    <span id="theme-toggle-label" class="hidden sm:inline">Light Mode</span>
+                </button>
+
+                <a href="#admission" class="hidden md:inline-flex btn-gold-luxury px-5 py-2.5 rounded-full text-xs uppercase tracking-widest">
+                    Enroll Now
+                </a>
+
+                <button id="mobile-menu-btn"
+                        type="button"
+                        aria-label="Open Mobile Navigation"
+                        class="xl:hidden w-10 h-10 rounded-full theme-glass flex items-center justify-center theme-gold">
+                    <i id="mobile-menu-icon" class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden xl:hidden theme-glass-strong border-t theme-border px-6 py-6 space-y-3 text-sm font-semibold tracking-widest uppercase">
+            <a href="#home" class="block py-2 theme-gold mobile-nav-link">Home</a>
+            <a href="#about" class="block py-2 theme-text-primary mobile-nav-link">About</a>
+            <a href="#guru" class="block py-2 theme-text-primary mobile-nav-link">Our Guru</a>
+            <a href="#classes" class="block py-2 theme-text-primary mobile-nav-link">Classes</a>
+            <a href="#gallery" class="block py-2 theme-text-primary mobile-nav-link">3D Gallery</a>
+            <a href="#videos" class="block py-2 theme-text-primary mobile-nav-link">Videos</a>
+            <a href="#performances" class="block py-2 theme-text-primary mobile-nav-link">Performances</a>
+            <a href="#admission" class="block py-2 theme-text-primary mobile-nav-link">Admission</a>
+            <a href="#contact" class="block py-2 theme-text-primary mobile-nav-link">Contact</a>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+         2. EYE-CATCHING CINEMATIC MULTI-SLIDE HERO SECTION
+         (With Reference Crimson-Terracotta Studio Color Effect & Cursive Subtitle)
+         ========================================================================== -->
+    <section id="home" class="relative min-h-screen flex items-center pt-28 pb-16 overflow-hidden nritya-crimson-backdrop">
+        <!-- Multi-Slide Background Stage -->
+        <div id="hero-slider" class="absolute inset-0 z-0">
+            <!-- Slide 1: Tribhangi Classical Odissi Pose -->
+            <div class="hero-slide active" data-title="Sacred Tribhangi Grace" data-subtitle="The signature three-bend temple sculpture posture of Odissi">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_Performance_DS.jpg"
+                     onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Sacred Tribhangi Grace');"
+                     alt="Odissi dancer performing graceful Tribhangi posture on stage"
+                     class="hero-slide-img opacity-35 mix-blend-luminosity">
+            </div>
+            <!-- Slide 2: Classical Odissi Stage Recital -->
+            <div class="hero-slide" data-title="Rhythm of Konark Natamandira" data-subtitle="Dynamic footwork and lyrical torso movements">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_dance_performance.jpg"
+                     onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Rhythm of Odisha');"
+                     alt="High contrast classical Odissi stage recital"
+                     class="hero-slide-img opacity-35 mix-blend-luminosity">
+            </div>
+            <!-- Slide 3: Expressive Abhinaya & Mudra -->
+            <div class="hero-slide" data-title="Divine Abhinaya & Bhava" data-subtitle="Sacred storytelling through classical hand mudras and devotion">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_Dancer.jpg"
+                     onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Divine Abhinaya');"
+                     alt="Odissi dancer demonstrating classical mudra and abhinaya"
+                     class="hero-slide-img opacity-35 mix-blend-luminosity">
+            </div>
+            <!-- Slide 4: Chowka Stance & Silver Filigree -->
+            <div class="hero-slide" data-title="Majestic Chowka Stance" data-subtitle="Inspired by Lord Jagannath and ancient Kalinga temple architecture">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_dancer_at_Konark.jpg"
+                     onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Majestic Chowka Stance');"
+                     alt="Odissi dancer performing at Konark festival"
+                     class="hero-slide-img opacity-35 mix-blend-luminosity">
+            </div>
+            <!-- Slide 5: Classical Ensemble & Pallavi -->
+            <div class="hero-slide" data-title="Lyrical Pallavi & Taal" data-subtitle="Synchronized grace celebrating Odisha's timeless heritage">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_classical_dance.jpg"
+                     onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Lyrical Pallavi');"
+                     alt="Odissi classical dance performance in traditional costume"
+                     class="hero-slide-img opacity-35 mix-blend-luminosity">
+            </div>
+            <!-- Slide 6: Moksha Spiritual Culmination -->
+            <div class="hero-slide" data-title="Moksha — Spiritual Liberation" data-subtitle="Where dance transcends into pure devotion">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Konark_Sun_Temple_Wheel.jpg"
+                     onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Moksha Devotion');"
+                     alt="Sacred Konark Sun Temple Wheel heritage of Odisha"
+                     class="hero-slide-img opacity-35 mix-blend-luminosity">
+            </div>
+
+            <!-- Rich Crimson-Red Studio Texture Overlay Matching Reference Image -->
+            <div class="absolute inset-0 z-10" style="background: var(--hero-vignette);"></div>
+            <div class="absolute inset-0 z-10 bg-[radial-gradient(circle_at_35%_45%,rgba(225,55,35,0.42)_0%,rgba(128,15,12,0.72)_58%,rgba(45,4,6,0.92)_100%)]"></div>
+        </div>
+
+        <!-- Floating Golden Light Particles Canvas -->
+        <canvas id="hero-particles" class="absolute inset-0 z-10 pointer-events-none"></canvas>
+
+        <!-- Main Hero Content Grid -->
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Left Column: Typography, Reference-Inspired "ODISSI - A dance beyond time." & Animated Taglines -->
+                <div class="lg:col-span-7 text-left space-y-5">
+                    <div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-black/45 border border-amber-300/50 backdrop-blur-md light-pass">
+                        <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-ping"></span>
+                        <span class="text-xs uppercase tracking-[0.26em] text-amber-100 font-semibold">Near Savarmati Hospital • Mahanadivihar • Odisha</span>
+                    </div>
+
+                    <h1 class="font-display text-4xl sm:text-6xl xl:text-7xl font-bold leading-[1.06] tracking-wide text-white drop-shadow-[0_10px_25px_rgba(0,0,0,0.65)]">
+                        BIDYA ODISSI
+                        <span class="block gold-3d-text mt-1">DANCE ACADEMY</span>
+                    </h1>
+
+                    <!-- Reference-Inspired "ODISSI / A dance beyond time." Callout -->
+                    <div class="pt-1">
+                        <div class="flex flex-wrap items-baseline gap-4">
+                            <span class="text-3xl sm:text-5xl font-extrabold tracking-[0.14em] text-white drop-shadow-md">ODISSI</span>
+                            <span class="font-script-nritya text-3xl sm:text-5xl text-amber-100 drop-shadow-md">A dance beyond time.</span>
+                        </div>
+                    </div>
+
+                    <!-- Animated Tagline Box -->
+                    <div class="min-h-[3.5rem] flex items-center border-l-4 border-amber-300 pl-4 sm:pl-6 bg-black/25 py-2 rounded-r-xl backdrop-blur-sm light-pass">
+                        <p id="hero-tagline" class="font-serif-luxury italic text-2xl sm:text-3xl md:text-4xl text-amber-200 transition-all duration-500">
+                            "Where Tradition Becomes an Art"
+                        </p>
+                    </div>
+
+                    <p class="text-amber-50/95 text-base sm:text-lg max-w-2xl leading-relaxed font-normal">
+                        Step into the sacred world of classical Odissi dance. Guided by authentic Guru-Shishya Parampara, we nurture grace, sculptural precision, rhythmic mastery, and spiritual devotion in every disciple.
+                    </p>
+
+                    <!-- Reference-Style Contact Strip Inside Hero Banner -->
+                    <div class="flex flex-wrap items-center gap-6 pt-2 text-xs sm:text-sm text-white/95 font-medium">
+                        <a href="#contact" class="inline-flex items-center gap-2 hover:text-amber-300 transition">
+                            <i class="fa-solid fa-globe text-amber-300 text-base"></i>
+                            <span>Mahanadivihar, Odisha</span>
+                        </a>
+                        <a href="tel:+918277754614" class="inline-flex items-center gap-2 hover:text-amber-300 transition">
+                            <i class="fa-solid fa-phone-volume text-amber-300 text-base"></i>
+                            <span>+91 8277754614</span>
+                        </a>
+                        <a href="mailto:SASHIKANTADAS@GMAIL.COM" class="inline-flex items-center gap-2 hover:text-amber-300 transition">
+                            <i class="fa-solid fa-envelope text-amber-300 text-base"></i>
+                            <span>SASHIKANTADAS@GMAIL.COM</span>
+                        </a>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <a href="#about" class="btn-gold-luxury auto-light-pass px-7 py-4 rounded-full text-xs sm:text-sm uppercase tracking-[0.18em] inline-flex items-center gap-2">
+                            <span>Explore Our Academy</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#classes" class="light-pass px-7 py-4 rounded-full bg-black/45 hover:bg-amber-500/25 text-amber-100 border border-amber-300/80 text-xs sm:text-sm font-bold uppercase tracking-[0.18em] transition backdrop-blur-md">
+                            Join Our Dance Classes
+                        </a>
+                        <a href="#contact" class="light-pass px-6 py-4 rounded-full bg-white/15 hover:bg-white/25 text-white border border-white/35 text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] transition backdrop-blur-md">
+                            Contact Us
+                        </a>
+                    </div>
+
+                    <!-- Interactive Hero Slide Controls & Caption Indicator -->
+                    <div class="pt-5 flex flex-wrap items-center justify-between gap-4 border-t border-white/20">
+                        <div class="flex items-center gap-3">
+                            <button id="hero-prev" type="button" aria-label="Previous Odissi Slide" class="w-10 h-10 rounded-full bg-black/50 hover:bg-amber-400 hover:text-black text-amber-200 border border-amber-300/50 flex items-center justify-center transition">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button id="hero-next" type="button" aria-label="Next Odissi Slide" class="w-10 h-10 rounded-full bg-black/50 hover:bg-amber-400 hover:text-black text-amber-200 border border-amber-300/50 flex items-center justify-center transition">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                            <div class="pl-2">
+                                <p id="hero-slide-title" class="font-serif-luxury text-lg font-bold text-amber-200 leading-none">Sacred Tribhangi Grace</p>
+                                <p id="hero-slide-subtitle" class="text-xs text-amber-100/80 mt-1">The signature three-bend temple sculpture posture of Odissi</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide Dots -->
+                        <div id="hero-dots" class="flex items-center gap-2"></div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Stylish High-Contrast Odissi Performance Card Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md">
+                        <!-- Decorative Konark Wheel Halo Behind Portrait -->
+                        <div class="absolute -inset-6 rounded-full border border-amber-400/30 animate-spin-slow pointer-events-none"></div>
+
+                        <!-- Main Active Portrait Card -->
+                        <div class="hero-stage-card light-pass auto-light-pass relative rounded-3xl overflow-hidden border-2 border-amber-400/80 shadow-[0_25px_70px_rgba(0,0,0,0.85)] bg-[#1a0509] aspect-[4/5]">
+                            <img id="hero-card-main-img"
+                                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_Performance_DS.jpg"
+                                 onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Odissi Stage Art');"
+                                 alt="Featured Odissi Dancer Pose"
+                                 class="w-full h-full object-cover object-top filter contrast-125 transition-all duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
+                                <span class="text-[10px] uppercase tracking-[0.28em] text-amber-300 font-semibold">Classical Odissi Showcase</span>
+                                <h3 id="hero-card-main-caption" class="font-serif-luxury text-2xl font-bold text-white mt-1">Sacred Tribhangi Grace</h3>
+                                <p class="text-xs text-amber-200/80 mt-1">Bidya Odissi Dance Academy • Mahanadivihar</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Thumbnail Strip to Switch Hero Performance Photos Instantly -->
+                        <div class="grid grid-cols-3 gap-3 mt-4">
+                            <button type="button" onclick="window.setHeroSlide(0)" class="light-pass group relative h-20 rounded-xl overflow-hidden border-2 border-amber-400 shadow-lg focus:outline-none">
+                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_Performance_DS.jpg"
+                                     onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Tribhangi');"
+                                     alt="Tribhangi Pose Thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition">
+                                <span class="absolute inset-0 bg-black/35 flex items-end p-1.5 text-[10px] font-semibold text-amber-200">01. Tribhangi</span>
+                            </button>
+                            <button type="button" onclick="window.setHeroSlide(1)" class="light-pass group relative h-20 rounded-xl overflow-hidden border border-amber-400/50 shadow-lg focus:outline-none">
+                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_dance_performance.jpg"
+                                     onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Stage Recital');"
+                                     alt="Odissi Stage Recital Thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition">
+                                <span class="absolute inset-0 bg-black/35 flex items-end p-1.5 text-[10px] font-semibold text-amber-200">02. Nritta</span>
+                            </button>
+                            <button type="button" onclick="window.setHeroSlide(2)" class="light-pass group relative h-20 rounded-xl overflow-hidden border border-amber-400/50 shadow-lg focus:outline-none">
+                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_Dancer.jpg"
+                                     onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Abhinaya');"
+                                     alt="Odissi Abhinaya Thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition">
+                                <span class="absolute inset-0 bg-black/35 flex items-end p-1.5 text-[10px] font-semibold text-amber-200">03. Abhinaya</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. ABOUT THE ACADEMY (NRITYASHASTRA-INSPIRED LAYOUT & PHOTO COLLAGE)
+         ========================================================================== -->
+    <section id="about" class="py-24 theme-bg-secondary border-t theme-border relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center reveal-up">
+                
+                <!-- Multi-Image Odissi Collage -->
+                <div class="lg:col-span-6 grid grid-cols-2 gap-4 relative">
+                    <div class="space-y-4">
+                        <div class="light-pass rounded-2xl overflow-hidden border-2 theme-border shadow-xl aspect-[4/5]">
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_dancer.jpg"
+                                 onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Classical Odissi Grace');"
+                                 alt="Odissi dancer in traditional Sambalpuri silk costume and silver filigree jewellery"
+                                 class="w-full h-full object-cover hover:scale-105 transition duration-700" loading="lazy">
+                        </div>
+                        <div class="p-5 rounded-2xl theme-glass text-center">
+                            <p class="font-display text-2xl theme-gold font-bold">Guru-Shishya</p>
+                            <p class="text-xs uppercase tracking-widest theme-text-secondary mt-1">Authentic Parampara</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <div class="p-5 rounded-2xl theme-glass text-center">
+                            <p class="font-display text-2xl theme-gold font-bold">2,000+ Yrs</p>
+                            <p class="text-xs uppercase tracking-widest theme-text-secondary mt-1">Natya Shastra Lineage</p>
+                        </div>
+                        <div class="light-pass rounded-2xl overflow-hidden border-2 theme-border shadow-xl aspect-[4/5]">
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_mudra.jpg"
+                                 onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Sacred Mudras');"
+                                 alt="Classical Odissi hand mudras and temple dance posture"
+                                 class="w-full h-full object-cover hover:scale-105 transition duration-700" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academy Philosophy & Editable History -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full theme-glass">
+                        <span class="text-xs uppercase tracking-[0.25em] theme-gold font-semibold">Sacred Heritage of Odisha</span>
+                    </div>
+                    <h2 class="font-display text-3xl sm:text-5xl font-bold theme-heading leading-tight">
+                        Where Temple Sculptures Come Alive in Rhythm
+                    </h2>
+                    <p class="theme-text-secondary text-base sm:text-lg leading-relaxed font-serif-luxury italic">
+                        "Odissi is not merely a dance; it is a visual prayer carved in stone and breathed into life through devotion."
+                    </p>
+                    <p class="theme-text-primary text-sm sm:text-base leading-relaxed">
+                        Located near <strong>Savarmati Hospital, Mahanadivihar, Odisha</strong>, <strong>Bidya Odissi Dance Academy</strong> stands as a dedicated sanctuary for the preservation, rigorous training, and promotion of classical Odissi dance. Rooted in the ancient treatises of the <em>Natya Shastra</em> and <em>Abhinaya Chandrika</em>, our curriculum honours the sacred Mahari and Gotipua traditions of Kalinga.
+                    </p>
+
+                    <!-- Pillar Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-5 rounded-2xl theme-glass">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fa-solid fa-dharmachakra theme-gold text-xl"></i>
+                                <h3 class="font-serif-luxury text-xl font-bold theme-heading">Chowka & Tribhangi</h3>
+                            </div>
+                            <p class="text-xs sm:text-sm theme-text-secondary leading-relaxed">
+                                Mastering the masculine square stance of Lord Jagannath and the feminine three-bend sculptural grace.
+                            </p>
+                        </div>
+                        <div class="p-5 rounded-2xl theme-glass">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fa-solid fa-hands-praying theme-gold text-xl"></i>
+                                <h3 class="font-serif-luxury text-xl font-bold theme-heading">Sacred Repertoire</h3>
+                            </div>
+                            <p class="text-xs sm:text-sm theme-text-secondary leading-relaxed">
+                                Complete training across Mangalacharan, Batu Nrutya, Pallavi, Abhinaya, and Moksha.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. OUR GURU & TRAINING METHODOLOGY SECTION
+         ========================================================================== -->
+    <section id="guru" class="py-24 theme-bg-primary border-t theme-border relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal-up">
+                <span class="text-xs uppercase tracking-[0.3em] theme-gold font-semibold block mb-2">Guru-Shishya Parampara</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-bold theme-heading">Our Guru & Training Philosophy</h2>
+                <div class="w-24 h-0.5 bg-amber-500 mx-auto my-5"></div>
+                <p class="theme-text-secondary text-base sm:text-lg">
+                    Guided by dedicated mentorship that nurtures technical perfection, spiritual discipline, and artistic individuality.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center reveal-up">
+                <!-- Guru Portrait Frame -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md">
+                        <div class="absolute -inset-3 rounded-3xl border border-amber-500/40 rotate-2 pointer-events-none"></div>
+                        <div class="light-pass auto-light-pass relative rounded-3xl overflow-hidden border-2 theme-border shadow-2xl aspect-[4/5]">
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_Performance_DS.jpg"
+                                 onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Guru & Mentor');"
+                                 alt="Principal Odissi Guru and Artistic Director at Bidya Odissi Dance Academy"
+                                 class="w-full h-full object-cover" loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent flex flex-col justify-end p-6">
+                                <span class="text-xs uppercase tracking-[0.25em] text-amber-300 font-semibold">Principal Mentor</span>
+                                <h3 class="font-display text-2xl font-bold text-white mt-1">Guru & Artistic Director</h3>
+                                <p class="text-xs text-amber-100/80 mt-1">Bidya Odissi Dance Academy • Mahanadivihar, Odisha</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Biography, Philosophy & Training Approach -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="p-6 sm:p-8 rounded-3xl theme-glass space-y-5">
+                        <div class="flex flex-wrap items-center justify-between gap-2 border-b theme-border pb-4">
+                            <div>
+                                <h3 class="font-serif-luxury text-2xl sm:text-3xl font-bold theme-heading">Mentorship Rooted in Classical Purity</h3>
+                                <p class="text-xs uppercase tracking-widest theme-gold mt-0.5">Editable Guru Profile • Classical Odissi Faculty</p>
+                            </div>
+                            <span class="px-3.5 py-1 rounded-full text-xs font-semibold bg-amber-500/15 theme-gold border theme-border">
+                                Mahanadivihar, Odisha
+                            </span>
+                        </div>
+
+                        <p class="theme-text-primary text-sm sm:text-base leading-relaxed">
+                            At <strong>Bidya Odissi Dance Academy</strong>, our Guru leads every student through a disciplined, compassionate, and deeply enriching artistic journey. Emphasizing the pristine grammar of traditional Odissi, classes integrate body conditioning, Mardala rhythm theory (Ukuta), Sanskrit & Odia poetic interpretation, and stage craft.
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                            <div class="light-pass p-4 rounded-2xl theme-bg-secondary border theme-border">
+                                <h4 class="font-serif-luxury text-lg font-bold theme-heading mb-1">
+                                    <i class="fa-solid fa-compass-drafting theme-gold mr-2"></i>Teaching Philosophy
+                                </h4>
+                                <p class="text-xs sm:text-sm theme-text-secondary">
+                                    Every student is trained to internalize rhythm (Laya) and devotion (Bhakti) so posture and expression flow naturally from within.
+                                </p>
+                            </div>
+                            <div class="light-pass p-4 rounded-2xl theme-bg-secondary border theme-border">
+                                <h4 class="font-serif-luxury text-lg font-bold theme-heading mb-1">
+                                    <i class="fa-solid fa-award theme-gold mr-2"></i>Cultural Contribution
+                                </h4>
+                                <p class="text-xs sm:text-sm theme-text-secondary">
+                                    Preparing the next generation of cultural ambassadors through classical recitals, lecture-demonstrations, and heritage festivals.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Mini Training Highlights Strip -->
+                        <div class="grid grid-cols-3 gap-3 pt-2">
+                            <div class="light-pass rounded-xl overflow-hidden h-24 border theme-border relative">
+                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_dance_performance.jpg"
+                                     onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Bhumi Pranam');"
+                                     alt="Bhumi Pranam training" class="w-full h-full object-cover" loading="lazy">
+                                <span class="absolute inset-0 bg-black/45 flex items-end p-2 text-[11px] text-amber-200 font-semibold">Bhumi Pranam</span>
+                            </div>
+                            <div class="light-pass rounded-xl overflow-hidden h-24 border theme-border relative">
+                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_Dancer.jpg"
+                                     onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Hasta Mudra');"
+                                     alt="Hasta Mudra training" class="w-full h-full object-cover" loading="lazy">
+                                <span class="absolute inset-0 bg-black/45 flex items-end p-2 text-[11px] text-amber-200 font-semibold">Hasta Mudras</span>
+                            </div>
+                            <div class="light-pass rounded-xl overflow-hidden h-24 border theme-border relative">
+                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_dancer_at_Konark.jpg"
+                                     onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Abhinaya');"
+                                     alt="Stage Abhinaya practice" class="w-full h-full object-cover" loading="lazy">
+                                <span class="absolute inset-0 bg-black/45 flex items-end p-2 text-[11px] text-amber-200 font-semibold">Stage Abhinaya</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. OUR DANCE PROGRAMS (8 INTERACTIVE 3D CARDS WITH WHATSAPP ENQUIRY)
+         ========================================================================== -->
+    <section id="classes" class="py-24 theme-bg-secondary border-t theme-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal-up">
+                <span class="text-xs uppercase tracking-[0.3em] theme-gold font-semibold block mb-2">Structured Curriculum</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-bold theme-heading">Our Odissi Dance Programs</h2>
+                <div class="w-24 h-0.5 bg-amber-500 mx-auto my-5"></div>
+                <p class="theme-text-secondary text-base sm:text-lg">
+                    Comprehensive training pathways tailored for young beginners, intermediate learners, and advanced performing artists.
+                </p>
+            </div>
+
+            <div id="programs-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 reveal-up">
+                <!-- Populated dynamically with verified Odissi imagery & fallback protection -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. EXTRAORDINARY 3D ROTATING CIRCULAR GLASS GALLERY (10 ODISSI PHOTOS)
+         ========================================================================== -->
+    <section id="gallery" class="py-24 theme-bg-primary border-t theme-border relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10 reveal-up">
+                <span class="text-xs uppercase tracking-[0.3em] theme-gold font-semibold block mb-2">Interactive 3D Exhibition</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-bold theme-heading">3D Circular Odissi Gallery</h2>
+                <div class="w-24 h-0.5 bg-amber-500 mx-auto my-5"></div>
+                <p class="theme-text-secondary text-sm sm:text-base">
+                    Explore high-contrast photographs of Tribhangi poses, Chowka stances, classical mudras, silver Tarakasi temple jewellery, and stage recitals. Drag, swipe, or use controls to rotate; click any frame to expand.
+                </p>
+            </div>
+
+            <!-- Interactive 3D Gallery Controls -->
+            <div class="flex items-center justify-center gap-4 mb-6">
+                <button id="gallery-left-btn" type="button" class="px-4 py-2 rounded-full theme-glass text-xs font-semibold uppercase tracking-widest theme-gold hover:border-amber-400 transition">
+                    <i class="fa-solid fa-rotate-left mr-1.5"></i>Rotate Left
+                </button>
+                <button id="gallery-pause-btn" type="button" class="px-4 py-2 rounded-full theme-glass text-xs font-semibold uppercase tracking-widest theme-text-primary hover:border-amber-400 transition">
+                    <i id="gallery-pause-icon" class="fa-solid fa-pause mr-1.5 theme-gold"></i><span id="gallery-pause-text">Pause</span>
+                </button>
+                <button id="gallery-right-btn" type="button" class="px-4 py-2 rounded-full theme-glass text-xs font-semibold uppercase tracking-widest theme-gold hover:border-amber-400 transition">
+                    Rotate Right<i class="fa-solid fa-rotate-right ml-1.5"></i>
+                </button>
+            </div>
+
+            <!-- 3D Rotating Carousel Stage -->
+            <div id="gallery-viewport" class="gallery-viewport">
+                <div id="gallery-ring" class="gallery-ring">
+                    <!-- 10 High-Contrast Odissi Cards Injected by JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox-modal" class="fixed inset-0 z-[90] bg-black/92 hidden items-center justify-center p-4 backdrop-blur-lg">
+            <button id="lightbox-close" type="button" aria-label="Close Lightbox" class="absolute top-6 right-6 w-12 h-12 rounded-full bg-amber-500/20 border border-amber-400 text-amber-300 hover:bg-amber-500 hover:text-black flex items-center justify-center text-xl transition">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="max-w-4xl w-full rounded-3xl overflow-hidden border-2 border-amber-400/75 bg-[#120407] shadow-2xl">
+                <img id="lightbox-image" src="" alt="Expanded Odissi Photograph" class="w-full max-h-[74vh] object-contain bg-black">
+                <div class="p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-t border-amber-500/30">
+                    <div>
+                        <span id="lightbox-tag" class="text-[10px] uppercase tracking-[0.25em] text-amber-400 font-semibold"></span>
+                        <h4 id="lightbox-title" class="font-serif-luxury text-2xl font-bold text-white"></h4>
+                        <p id="lightbox-desc" class="text-xs text-gray-300 mt-0.5"></p>
+                    </div>
+                    <a href="https://wa.me/918277754614?text=Namaste,%20I%20admired%20your%20Odissi%20gallery%20and%20want%20to%20join%20classes."
+                       target="_blank" rel="noopener noreferrer"
+                       class="btn-gold-luxury px-5 py-2.5 rounded-full text-xs uppercase tracking-widest text-center">
+                        Enquire Class
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. CINEMATIC DANCE VIDEO SECTION ("Experience the Divine Rhythm of Odissi")
+         ========================================================================== -->
+    <section id="videos" class="py-24 theme-bg-secondary border-t theme-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14 reveal-up">
+                <span class="text-xs uppercase tracking-[0.3em] theme-gold font-semibold block mb-2">Moving Sculpture</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-bold theme-heading">Experience the Divine Rhythm of Odissi</h2>
+                <div class="w-24 h-0.5 bg-amber-500 mx-auto my-5"></div>
+                <p class="theme-text-secondary text-base sm:text-lg">
+                    Watch classical Odissi recitals or load your own academy MP4 performance file or video URL directly in the player below.
+                </p>
+            </div>
+
+            <!-- Featured Video Frame -->
+            <div id="video-frame-container" class="max-w-5xl mx-auto rounded-3xl overflow-hidden border-2 border-amber-500/65 shadow-2xl theme-glass reveal-up">
+                <div class="relative aspect-video bg-black">
+                    <video id="academy-video-player"
+                           class="w-full h-full object-cover"
+                           poster="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_Performance_DS.jpg"
+                           preload="metadata"
+                           playsinline>
+                        <source id="academy-video-source" src="https://upload.wikimedia.org/wikipedia/commons/transcoded/6/64/Odissi_dance_at_Nishagandi_Festival_2024.webm/Odissi_dance_at_Nishagandi_Festival_2024.webm.720p.vp9.webm" type="video/webm">
+                        Your browser does not support HTML5 video.
+                    </video>
+
+                    <!-- Center Play Overlay -->
+                    <button id="video-center-play"
+                            type="button"
+                            aria-label="Play Featured Odissi Video"
+                            class="absolute inset-0 flex flex-col items-center justify-center bg-black/45 hover:bg-black/30 transition group">
+                        <span class="w-20 h-20 rounded-full btn-gold-luxury flex items-center justify-center text-2xl shadow-2xl group-hover:scale-110 transition">
+                            <i id="video-overlay-icon" class="fa-solid fa-play ml-1"></i>
+                        </span>
+                        <span class="mt-3 px-4 py-1 rounded-full bg-black/70 border border-amber-400/50 text-xs uppercase tracking-[0.2em] text-amber-200">
+                            Click to Play Classical Odissi Recital
+                        </span>
+                    </button>
+                </div>
+
+                <!-- Custom Video Control Bar & Custom MP4/URL Loader -->
+                <div class="p-5 sm:p-6 flex flex-col lg:flex-row items-center justify-between gap-4 border-t theme-border">
+                    <div class="flex flex-wrap items-center gap-3">
+                        <button id="video-play-btn" type="button" class="btn-gold-luxury px-5 py-2.5 rounded-full text-xs uppercase tracking-wider">
+                            <i class="fa-solid fa-play mr-1.5"></i><span id="video-btn-label">Play</span>
+                        </button>
+                        <button id="video-mute-btn" type="button" class="px-4 py-2.5 rounded-full theme-glass text-xs font-semibold uppercase tracking-wider theme-gold">
+                            <i id="video-mute-icon" class="fa-solid fa-volume-high mr-1.5"></i>Mute
+                        </button>
+                        <button id="video-fullscreen-btn" type="button" class="px-4 py-2.5 rounded-full theme-glass text-xs font-semibold uppercase tracking-wider theme-text-primary">
+                            <i class="fa-solid fa-expand mr-1.5 theme-gold"></i>Fullscreen
+                        </button>
+                    </div>
+
+                    <!-- Replaceable MP4 Upload / URL Controls -->
+                    <div class="flex flex-wrap items-center gap-2 w-full lg:w-auto justify-end">
+                        <label class="cursor-pointer px-4 py-2 rounded-full theme-glass text-xs font-semibold theme-gold hover:border-amber-400 transition">
+                            <i class="fa-solid fa-upload mr-1.5"></i>Load Local MP4
+                            <input id="video-file-upload" type="file" accept="video/mp4,video/webm" class="hidden">
+                        </label>
+                        <div class="flex items-center gap-1">
+                            <input id="custom-video-url" type="url" placeholder="Or paste MP4 video URL..." class="theme-input text-xs px-3 py-2 rounded-full w-48 sm:w-56">
+                            <button id="load-url-btn" type="button" class="px-3.5 py-2 rounded-full bg-amber-500/20 border border-amber-400 text-xs font-semibold theme-gold hover:bg-amber-500 hover:text-black transition">
+                                Load
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Multiple Dance Performance Highlights Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 reveal-up">
+                <div class="rounded-2xl overflow-hidden theme-glass group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_Performance_DS.jpg"
+                             onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Mangalacharan');"
+                             alt="Mangalacharan invocation performance" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/75 text-amber-300 text-[10px] uppercase tracking-widest border border-amber-400/40">Repertoire I</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif-luxury text-xl font-bold theme-heading">Mangalacharan & Bhumi Pranam</h3>
+                        <p class="text-xs sm:text-sm theme-text-secondary mt-1">Sacred invocation offering salutations to Mother Earth, Lord Jagannath, the Guru, and the audience.</p>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl overflow-hidden theme-glass group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_dance_performance.jpg"
+                             onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Batu & Pallavi');"
+                             alt="Pallavi Odissi performance" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/75 text-amber-300 text-[10px] uppercase tracking-widest border border-amber-400/40">Repertoire II</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif-luxury text-xl font-bold theme-heading">Batu Nrutya & Raga Pallavi</h3>
+                        <p class="text-xs sm:text-sm theme-text-secondary mt-1">Sculptural poses inspired by temple friezes followed by lyrical elaboration of raga and tala.</p>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl overflow-hidden theme-glass group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_Dancer.jpg"
+                             onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Abhinaya & Moksha');"
+                             alt="Gitagovinda Abhinaya recital" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/75 text-amber-300 text-[10px] uppercase tracking-widest border border-amber-400/40">Repertoire III</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif-luxury text-xl font-bold theme-heading">Ashtapadi Abhinaya & Moksha</h3>
+                        <p class="text-xs sm:text-sm theme-text-secondary mt-1">Expressive poetry of Jayadeva's Gita Govinda culminating in the spiritual crescendo of Moksha.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. OUR PERFORMANCES AND EVENTS TIMELINE
+         ========================================================================== -->
+    <section id="performances" class="py-24 theme-bg-primary border-t theme-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal-up">
+                <span class="text-xs uppercase tracking-[0.3em] theme-gold font-semibold block mb-2">Stage & Cultural Calendar</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-bold theme-heading">Our Performances & Cultural Events</h2>
+                <div class="w-24 h-0.5 bg-amber-500 mx-auto my-5"></div>
+                <p class="theme-text-secondary text-base sm:text-lg">
+                    Celebrating Odisha's living heritage through annual showcases, classical dance festivals, and intensive workshops.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal-up">
+                <!-- Event 1 -->
+                <div class="rounded-3xl overflow-hidden theme-glass flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_dancer_at_Konark.jpg"
+                                 onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Annual Showcase');"
+                                 alt="Annual Academy Dance Performance" class="w-full h-full object-cover" loading="lazy">
+                            <span class="absolute bottom-3 left-4 px-3 py-1 rounded-full bg-black/80 text-amber-300 text-xs font-semibold border border-amber-400/40">Annual Showcase</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif-luxury text-2xl font-bold theme-heading mb-2">Annual Academy Utsav</h3>
+                            <p class="text-sm theme-text-secondary leading-relaxed">
+                                Full-scale stage production where beginner, intermediate, and senior disciples present traditional solo and group choreographies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="rounded-3xl overflow-hidden theme-glass flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Konark_Sun_Temple_Front_View.jpg"
+                                 onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Temple Festivals');"
+                                 alt="Classical Dance Festival Odisha" class="w-full h-full object-cover" loading="lazy">
+                            <span class="absolute bottom-3 left-4 px-3 py-1 rounded-full bg-black/80 text-amber-300 text-xs font-semibold border border-amber-400/40">Cultural Festivals</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif-luxury text-2xl font-bold theme-heading mb-2">Classical Dance Festivals & Parvas</h3>
+                            <p class="text-sm theme-text-secondary leading-relaxed">
+                                Sacred recitals during Utkal Divas, Guru Purnima, Kumar Purnima, and classical temple dance celebrations across Odisha.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="rounded-3xl overflow-hidden theme-glass flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_classical_dance.jpg"
+                                 onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('Abhinaya Workshop');"
+                                 alt="Odissi Workshop and Lecture Demonstration" class="w-full h-full object-cover" loading="lazy">
+                            <span class="absolute bottom-3 left-4 px-3 py-1 rounded-full bg-black/80 text-amber-300 text-xs font-semibold border border-amber-400/40">Intensive Workshops</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif-luxury text-2xl font-bold theme-heading mb-2">Mudra, Mardala & Abhinaya Camps</h3>
+                            <p class="text-sm theme-text-secondary leading-relaxed">
+                                Specialized seasonal workshops focusing on Tala theory, Aharya (traditional costume & silver jewellery styling), and stagecraft.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. WHY CHOOSE OUR ACADEMY
+         ========================================================================== -->
+    <section class="py-20 theme-bg-secondary border-t theme-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14 reveal-up">
+                <span class="text-xs uppercase tracking-[0.3em] theme-gold font-semibold block mb-2">Excellence in Classical Arts</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold theme-heading">Why Choose Bidya Odissi Dance Academy</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal-up">
+                <div class="p-6 rounded-2xl theme-glass flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/15 border theme-border flex items-center justify-center theme-gold text-xl shrink-0">
+                        <i class="fa-solid fa-gopuram"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-serif-luxury text-xl font-bold theme-heading">Traditional Odissi Learning</h3>
+                        <p class="text-xs sm:text-sm theme-text-secondary mt-1">Uncompromised adherence to classical shastras, Bhangis, and traditional Odissi repertoire.</p>
+                    </div>
+                </div>
+                <div class="p-6 rounded-2xl theme-glass flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/15 border theme-border flex items-center justify-center theme-gold text-xl shrink-0">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-serif-luxury text-xl font-bold theme-heading">Structured Dance Training</h3>
+                        <p class="text-xs sm:text-sm theme-text-secondary mt-1">Progressive syllabus with clear milestones from foundational stepping to full margam.</p>
+                    </div>
+                </div>
+                <div class="p-6 rounded-2xl theme-glass flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/15 border theme-border flex items-center justify-center theme-gold text-xl shrink-0">
+                        <i class="fa-solid fa-masks-theater"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-serif-luxury text-xl font-bold theme-heading">Expression & Rhythm</h3>
+                        <p class="text-xs sm:text-sm theme-text-secondary mt-1">Harmonious balance of intricate rhythmic footwork (Nritta) and soulful storytelling (Abhinaya).</p>
+                    </div>
+                </div>
+                <div class="p-6 rounded-2xl theme-glass flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/15 border theme-border flex items-center justify-center theme-gold text-xl shrink-0">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-serif-luxury text-xl font-bold theme-heading">Cultural & Artistic Growth</h3>
+                        <p class="text-xs sm:text-sm theme-text-secondary mt-1">Instilling poise, respect for heritage, and confidence in children, youth, and adults.</p>
+                    </div>
+                </div>
+                <div class="p-6 rounded-2xl theme-glass flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/15 border theme-border flex items-center justify-center theme-gold text-xl shrink-0">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-serif-luxury text-xl font-bold theme-heading">Individual Learning Support</h3>
+                        <p class="text-xs sm:text-sm theme-text-secondary mt-1">Personal posture correction and attentive guidance for every student in small batches.</p>
+                    </div>
+                </div>
+                <div class="p-6 rounded-2xl theme-glass flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/15 border theme-border flex items-center justify-center theme-gold text-xl shrink-0">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-serif-luxury text-xl font-bold theme-heading">Stage Performance Opportunities</h3>
+                        <p class="text-xs sm:text-sm theme-text-secondary mt-1">Regular opportunities to perform on prestigious cultural stages and academy recitals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         11. STUDENT ENQUIRY AND ADMISSION FORM (WHATSAPP & EMAIL)
+         ========================================================================== -->
+    <section id="admission" class="py-24 theme-bg-primary border-t theme-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal-up">
+                <span class="text-xs uppercase tracking-[0.3em] theme-gold font-semibold block mb-2">Begin Your Classical Journey</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-bold theme-heading">Student Admission & Enquiry</h2>
+                <div class="w-24 h-0.5 bg-amber-500 mx-auto my-5"></div>
+                <p class="theme-text-secondary text-sm sm:text-base">
+                    Complete the admission form below and send your enquiry directly to our academy via WhatsApp (<strong>+91 8277754614</strong>) or Email (<strong>SASHIKANTADAS@GMAIL.COM</strong>).
+                </p>
+            </div>
+
+            <div id="admission-form-card" class="p-6 sm:p-10 rounded-3xl theme-glass reveal-up transition-all duration-500">
+                <form id="admission-form" class="space-y-5" novalidate>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label for="adm-student" class="block text-xs uppercase tracking-wider theme-gold font-semibold mb-2">Student Name *</label>
+                            <input id="adm-student" type="text" required placeholder="Enter student's full name" class="w-full px-4 py-3.5 rounded-xl theme-input text-sm">
+                        </div>
+                        <div>
+                            <label for="adm-guardian" class="block text-xs uppercase tracking-wider theme-gold font-semibold mb-2">Parent / Guardian Name</label>
+                            <input id="adm-guardian" type="text" placeholder="Enter parent or guardian name" class="w-full px-4 py-3.5 rounded-xl theme-input text-sm">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+                        <div>
+                            <label for="adm-phone" class="block text-xs uppercase tracking-wider theme-gold font-semibold mb-2">Contact Number *</label>
+                            <input id="adm-phone" type="tel" required placeholder="10-digit mobile number" class="w-full px-4 py-3.5 rounded-xl theme-input text-sm">
+                        </div>
+                        <div>
+                            <label for="adm-email" class="block text-xs uppercase tracking-wider theme-gold font-semibold mb-2">Email Address *</label>
+                            <input id="adm-email" type="email" required placeholder="name@example.com" class="w-full px-4 py-3.5 rounded-xl theme-input text-sm">
+                        </div>
+                        <div>
+                            <label for="adm-age" class="block text-xs uppercase tracking-wider theme-gold font-semibold mb-2">Student Age *</label>
+                            <input id="adm-age" type="number" min="4" max="80" required placeholder="Age in years" class="w-full px-4 py-3.5 rounded-xl theme-input text-sm">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label for="adm-program" class="block text-xs uppercase tracking-wider theme-gold font-semibold mb-2">Preferred Dance Program *</label>
+                            <select id="adm-program" required class="w-full px-4 py-3.5 rounded-xl theme-input text-sm">
+                                <option value="">Select Dance Program</option>
+                                <option value="Beginner Odissi Classes">Beginner Odissi Classes</option>
+                                <option value="Intermediate Odissi Training">Intermediate Odissi Training</option>
+                                <option value="Advanced Odissi Training">Advanced Odissi Training</option>
+                                <option value="Traditional Mudra Practice">Traditional Mudra Practice</option>
+                                <option value="Abhinaya and Expressions">Abhinaya and Expressions</option>
+                                <option value="Individual Dance Training">Individual Dance Training</option>
+                                <option value="Cultural Dance Workshops">Cultural Dance Workshops</option>
+                                <option value="Stage Performance Preparation">Stage Performance Preparation</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="adm-timing" class="block text-xs uppercase tracking-wider theme-gold font-semibold mb-2">Preferred Class Timing *</label>
+                            <select id="adm-timing" required class="w-full px-4 py-3.5 rounded-xl theme-input text-sm">
+                                <option value="Morning Session">Morning Session</option>
+                                <option value="Evening Session">Evening Session</option>
+                                <option value="Weekend Batch (Sat & Sun)">Weekend Batch (Sat & Sun)</option>
+                                <option value="Individual Flexible Slot">Individual Flexible Slot</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="adm-message" class="block text-xs uppercase tracking-wider theme-gold font-semibold mb-2">Message / Prior Dance Experience</label>
+                        <textarea id="adm-message" rows="3" placeholder="Share any questions or prior dance training..." class="w-full px-4 py-3.5 rounded-xl theme-input text-sm"></textarea>
+                    </div>
+
+                    <!-- Custom Feedback Banner (No Browser Alert) -->
+                    <div id="form-feedback" class="hidden p-4 rounded-xl text-sm font-medium border"></div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <button type="button" id="submit-whatsapp-btn" class="light-pass py-4 px-6 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg transition">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Submit via WhatsApp</span>
+                        </button>
+                        <button type="button" id="submit-email-btn" class="btn-gold-luxury py-4 px-6 rounded-xl text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-envelope text-lg"></i>
+                            <span>Submit via Email</span>
+                        </button>
+                    </div>
+
+                    <p class="text-[11px] theme-text-muted text-center pt-2">
+                        * Transparency Note: Submitting opens a pre-filled message in your WhatsApp or default Email client addressed directly to the academy. Automatic database storage requires connecting a backend or form service.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         12. CONTACT SECTION + SCREENSHOT 1 STYLISH QUICK-ACTION HUB CARDS
+         ========================================================================== -->
+    <section id="contact" class="py-24 theme-bg-secondary border-t theme-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 reveal-up">
+                <span class="text-xs uppercase tracking-[0.3em] theme-gold font-semibold block mb-2">Visit Our Studio & Instant Connect</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-bold theme-heading">Contact Bidya Odissi Dance Academy</h2>
+                <div class="w-24 h-0.5 bg-amber-500 mx-auto my-5"></div>
+            </div>
+
+            <!-- ==================================================================
+                 SCREENSHOT 1 STYLISH QUICK-ACTION HUB (DESTINATION BAR + 4 CARDS)
+                 ================================================================== -->
+            <div class="mb-14 p-6 sm:p-9 rounded-3xl bg-gradient-to-br from-[#16070a] via-[#120b0d] to-[#0d0608] border border-amber-500/35 shadow-[0_25px_65px_rgba(0,0,0,0.75)] reveal-up">
+                
+                <!-- Top Destination & Verified Badge Bar (Exact Reference Layout) -->
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-8 mb-8 border-b border-white/10">
+                    <div class="flex flex-wrap items-center gap-8 sm:gap-12">
+                        <div>
+                            <span class="block text-[10px] uppercase tracking-[0.28em] text-amber-200/60 font-semibold">DESTINATION</span>
+                            <p class="text-sm sm:text-base font-bold text-white mt-1">Near Savarmati Hospital, Mahanadivihar, Odisha 753004</p>
+                        </div>
+                        <div>
+                            <span class="block text-[10px] uppercase tracking-[0.28em] text-amber-200/60 font-semibold">DIRECT SUPPORT</span>
+                            <p class="text-sm sm:text-base font-bold text-white mt-1 flex items-center gap-2">
+                                <span>08277754614</span>
+                                <span class="text-amber-400">•</span>
+                                <span class="text-emerald-400 flex items-center gap-1.5">
+                                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                                    WhatsApp Active
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Verified Destination Golden Emblem Pill -->
+                    <a href="https://www.google.com/maps/search/?api=1&query=Sabarmati+Hospital+Mahanadi+Vihar+Cuttack+Odisha"
+                       target="_blank" rel="noopener noreferrer"
+                       class="verified-destination-pill light-pass auto-light-pass rounded-2xl pl-6 pr-3 py-2.5 flex items-center justify-between gap-8 sm:min-w-[290px] group">
+                        <div>
+                            <span class="text-xs sm:text-sm font-semibold text-amber-100/90 group-hover:text-white transition">Verified Destination</span>
+                            <span class="block text-[10px] uppercase tracking-widest text-amber-300/75">Classical Odissi Sanctuary</span>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-300 via-amber-500 to-amber-700 text-[#1a0508] flex items-center justify-center text-xl shadow-lg group-hover:rotate-12 transition">
+                            <i class="fa-solid fa-dharmachakra"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 4 Stylish Interactive Action Cards (From Screenshot 1) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    
+                    <!-- Card 1: CALL NOW (Crimson Red) -->
+                    <a href="tel:+918277754614"
+                       class="action-hub-card action-card-call auto-light-pass block text-left group">
+                        <div class="action-icon-box">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <h3 class="text-sm sm:text-base font-extrabold uppercase tracking-wider text-white">CALL NOW</h3>
+                        <p class="text-xs sm:text-sm text-white/90 font-semibold mt-1">+91 82777 54614</p>
+                    </a>
+
+                    <!-- Card 2: WHATSAPP US (Emerald Green) -->
+                    <a href="https://wa.me/918277754614?text=Namaste%20Bidya%20Odissi%20Dance%20Academy,%20I%20would%20like%20instant%20guidance%20regarding%20Odissi%20dance%20admissions."
+                       target="_blank" rel="noopener noreferrer"
+                       class="action-hub-card action-card-whatsapp auto-light-pass block text-left group">
+                        <div class="action-icon-box">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        </div>
+                        <h3 class="text-sm sm:text-base font-extrabold uppercase tracking-wider text-white">WHATSAPP US</h3>
+                        <p class="text-xs sm:text-sm text-white/90 font-semibold mt-1">Instant Reply</p>
+                    </a>
+
+                    <!-- Card 3: GET DIRECTIONS (Royal Indigo Blue) -->
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=Sabarmati+Hospital+Mahanadi+Vihar+Cuttack+Odisha+India"
+                       target="_blank" rel="noopener noreferrer"
+                       class="action-hub-card action-card-directions auto-light-pass block text-left group">
+                        <div class="action-icon-box">
+                            <i class="fa-solid fa-diamond-turn-right"></i>
+                        </div>
+                        <h3 class="text-sm sm:text-base font-extrabold uppercase tracking-wider text-white">GET DIRECTIONS</h3>
+                        <p class="text-xs sm:text-sm text-white/90 font-semibold mt-1">Google Maps Pin</p>
+                    </a>
+
+                    <!-- Card 4: CONSULTATION / FREE GUIDANCE (Vibrant Burnt Orange) -->
+                    <a href="#admission"
+                       onclick="window.highlightConsultationForm(event)"
+                       class="action-hub-card action-card-consultation auto-light-pass block text-left group">
+                        <div class="action-icon-box">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                        </div>
+                        <h3 class="text-sm sm:text-base font-extrabold uppercase tracking-wider text-white">CONSULTATION</h3>
+                        <p class="text-xs sm:text-sm text-white/90 font-semibold mt-1">Free Dance Guidance</p>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Detailed Contact Info & Interactive Map Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch reveal-up">
+                <!-- Contact Details Column -->
+                <div class="lg:col-span-5 space-y-5 flex flex-col justify-between">
+                    <div class="p-6 rounded-2xl theme-glass flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/15 border theme-border flex items-center justify-center theme-gold text-xl shrink-0">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-serif-luxury text-xl font-bold theme-heading">Academy Location</h3>
+                            <p class="text-sm theme-text-primary mt-1 font-semibold">BIDYA ODISSI DANCE ACADEMY</p>
+                            <p class="text-sm theme-text-secondary">Near Savarmati Hospital, Mahanadivihar, Cuttack, Odisha, India</p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=Sabarmati+Hospital+Mahanadi+Vihar+Cuttack+Odisha+India"
+                               target="_blank" rel="noopener noreferrer"
+                               class="inline-flex items-center gap-1.5 text-xs font-semibold theme-gold hover:underline mt-2">
+                                <span>Get Google Maps Directions (Near Savarmati Hospital)</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl theme-glass flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/15 border theme-border flex items-center justify-center theme-gold text-xl shrink-0">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-serif-luxury text-xl font-bold theme-heading">Phone & WhatsApp</h3>
+                            <p class="text-sm theme-text-secondary mt-1">Direct Admissions & Class Enquiries:</p>
+                            <div class="flex flex-wrap gap-3 mt-2">
+                                <a href="tel:+918277754614" class="light-pass px-4 py-2 rounded-lg bg-amber-500/15 border theme-border text-xs font-bold theme-gold hover:bg-amber-500 hover:text-black transition">
+                                    <i class="fa-solid fa-phone mr-1.5"></i>+91 8277754614
+                                </a>
+                                <a href="https://wa.me/918277754614" target="_blank" rel="noopener noreferrer" class="light-pass px-4 py-2 rounded-lg bg-emerald-600/20 border border-emerald-500/50 text-xs font-bold text-emerald-400 hover:bg-emerald-600 hover:text-white transition">
+                                    <i class="fa-brands fa-whatsapp mr-1.5"></i>WhatsApp Chat
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl theme-glass flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/15 border theme-border flex items-center justify-center theme-gold text-xl shrink-0">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-serif-luxury text-xl font-bold theme-heading">Official Email</h3>
+                            <a href="mailto:SASHIKANTADAS@GMAIL.COM" class="text-sm font-semibold theme-gold hover:underline block mt-1 break-all">
+                                SASHIKANTADAS@GMAIL.COM
+                            </a>
+                            <p class="text-xs theme-text-muted mt-1">Click to open your email application directly.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map & Quick Message Column -->
+                <div class="lg:col-span-7 rounded-3xl overflow-hidden theme-glass p-6 flex flex-col justify-between gap-6">
+                    <div class="w-full h-64 sm:h-72 rounded-2xl overflow-hidden border theme-border relative">
+                        <iframe title="Near Savarmati Hospital Mahanadivihar Odisha Map"
+                                src="https://www.google.com/maps?q=Sabarmati+Hospital,+Mahanadi+Vihar,+Cuttack,+Odisha,+India&output=embed"
+                                class="w-full h-full border-0"
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Sabarmati+Hospital+Mahanadi+Vihar+Cuttack+Odisha"
+                           target="_blank" rel="noopener noreferrer"
+                           class="absolute bottom-3 right-3 px-4 py-2 rounded-full btn-gold-luxury text-xs uppercase tracking-wider shadow-xl flex items-center gap-1.5">
+                            <i class="fa-solid fa-diamond-turn-right"></i>
+                            <span>Open in Google Maps</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Contact Message Box -->
+                    <div class="space-y-3">
+                        <h4 class="font-serif-luxury text-xl font-bold theme-heading">Send a Quick Message</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <input id="quick-name" type="text" placeholder="Your Name" class="px-4 py-3 rounded-xl theme-input text-xs sm:text-sm">
+                            <input id="quick-message" type="text" placeholder="Your Question or Enquiry..." class="px-4 py-3 rounded-xl theme-input text-xs sm:text-sm">
+                        </div>
+                        <div class="flex flex-wrap gap-3">
+                            <button type="button" onclick="window.sendQuickContact('whatsapp')" class="btn-gold-luxury px-5 py-2.5 rounded-xl text-xs uppercase tracking-wider">
+                                <i class="fa-brands fa-whatsapp mr-1.5"></i>Send on WhatsApp
+                            </button>
+                            <button type="button" onclick="window.sendQuickContact('email')" class="px-5 py-2.5 rounded-xl theme-glass text-xs font-semibold uppercase tracking-wider theme-gold hover:border-amber-400">
+                                <i class="fa-solid fa-envelope mr-1.5"></i>Send via Email
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         17. MULTI-COLUMN REGAL FOOTER WITH UPGRADED 3D DEVELOPER SHOWCASE
+         ========================================================================== -->
+    <footer class="theme-bg-primary border-t-2 theme-border pt-16 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b theme-border">
+                <!-- Col 1: Academy Intro -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full border-2 border-amber-500 flex items-center justify-center bg-[#2b0910] text-amber-300 font-display font-bold">
+                            बो
+                        </div>
+                        <span class="font-display text-lg font-bold tracking-wider theme-heading">BIDYA ODISSI DANCE ACADEMY</span>
+                    </div>
+                    <p class="text-sm theme-text-secondary max-w-md leading-relaxed">
+                        Dedicated to preserving, teaching, and celebrating the divine classical dance heritage of Odisha near Savarmati Hospital, Mahanadivihar. Join us to experience grace, rhythm, and devotion.
+                    </p>
+                    <div class="flex flex-wrap gap-3 pt-1">
+                        <a href="https://wa.me/918277754614" target="_blank" rel="noopener noreferrer" class="btn-gold-luxury px-4 py-2 rounded-full text-xs uppercase tracking-wider inline-flex items-center gap-1.5">
+                            <i class="fa-brands fa-whatsapp"></i><span>WhatsApp Enquiry</span>
+                        </a>
+                        <a href="mailto:SASHIKANTADAS@GMAIL.COM" class="px-4 py-2 rounded-full theme-glass text-xs uppercase tracking-wider theme-gold inline-flex items-center gap-1.5">
+                            <i class="fa-solid fa-envelope"></i><span>Email Us</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="font-display text-sm font-bold uppercase tracking-widest theme-heading mb-4">Quick Navigation</h4>
+                    <ul class="space-y-2 text-sm theme-text-secondary">
+                        <li><a href="#home" class="hover:text-amber-400 transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-amber-400 transition">About Academy</a></li>
+                        <li><a href="#guru" class="hover:text-amber-400 transition">Our Guru</a></li>
+                        <li><a href="#classes" class="hover:text-amber-400 transition">Dance Programs</a></li>
+                        <li><a href="#gallery" class="hover:text-amber-400 transition">3D Circular Gallery</a></li>
+                        <li><a href="#videos" class="hover:text-amber-400 transition">Dance Videos</a></li>
+                        <li><a href="#admission" class="hover:text-amber-400 transition">Student Admission</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Direct Contact -->
+                <div>
+                    <h4 class="font-display text-sm font-bold uppercase tracking-widest theme-heading mb-4">Contact Details</h4>
+                    <ul class="space-y-2.5 text-sm theme-text-secondary">
+                        <li>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Sabarmati+Hospital+Mahanadi+Vihar+Cuttack+Odisha" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition">
+                                <i class="fa-solid fa-location-dot theme-gold mr-2"></i>Near Savarmati Hospital, Mahanadivihar, Odisha
+                            </a>
+                        </li>
+                        <li><a href="tel:+918277754614" class="hover:text-amber-400 transition"><i class="fa-solid fa-phone theme-gold mr-2"></i>8277754614</a></li>
+                        <li><a href="mailto:SASHIKANTADAS@GMAIL.COM" class="hover:text-amber-400 transition break-all"><i class="fa-solid fa-envelope theme-gold mr-2"></i>SASHIKANTADAS@GMAIL.COM</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ==================================================================
+                 COPYRIGHT & STYLISH 3D ANIMATED DEVELOPER SHOWCASE
+                 (COMBINING CROWN BADGE + ARCHITECTED WITH PASSION + 07798977519 & 8277754614)
+                 ================================================================== -->
+            <div class="pt-10 flex flex-col xl:flex-row items-center justify-between gap-8">
+                <p class="text-xs theme-text-muted text-center xl:text-left">
+                    &copy; <span id="current-year">2026</span> Bidya Odissi Dance Academy, Mahanadivihar, Odisha. All Rights Reserved.
+                </p>
+
+                <!-- 3D Animated & Hover-Interactive Developer Credit Card -->
+                <div class="dev-3d-wrapper w-full max-w-2xl">
+                    <div id="dev-credit-card" class="dev-3d-card px-6 sm:px-9 py-6 rounded-3xl select-none">
+                        <div class="flex flex-col sm:flex-row items-center justify-between gap-5">
+                            
+                            <!-- Left: Royal Crown Emblem & Stylish Typography -->
+                            <div class="flex flex-col sm:flex-row items-center text-center sm:text-left gap-4">
+                                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-300 via-amber-500 to-amber-700 text-[#1c0408] flex items-center justify-center shadow-[0_10px_25px_rgba(212,175,55,0.45)] font-display font-bold text-2xl shrink-0">
+                                    <i class="fa-solid fa-crown"></i>
+                                </div>
+                                <div>
+                                    <p class="dev-passion-subtitle text-[10px] sm:text-xs uppercase mb-1">
+                                        ARCHITECTED &amp; BUILT WITH PASSION
+                                    </p>
+                                    <p class="dev-3d-title font-display text-base sm:text-xl md:text-2xl font-black tracking-[0.14em] uppercase">
+                                        DESIGNED &amp; DEVELOPED BY S K DAS
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Interactive Animated Functional Contact Numbers Row (07798977519 & 8277754614) -->
+                        <div class="mt-5 pt-4 border-t border-amber-400/25 flex flex-wrap items-center justify-center sm:justify-between gap-3">
+                            
+                            <!-- Primary Featured Number: 07798977519 (Direct Call + WhatsApp) -->
+                            <div class="flex flex-wrap items-center justify-center gap-2.5">
+                                <a href="tel:07798977519"
+                                   title="Call Developer S K Das: 07798977519"
+                                   class="dev-number-pill light-pass px-4 py-2 rounded-xl inline-flex items-center gap-2.5">
+                                    <i class="fa-solid fa-phone-volume text-amber-400 animate-bounce text-sm"></i>
+                                    <span class="dev-phone-glow-text text-sm sm:text-base font-extrabold tracking-[0.16em]">07798977519</span>
+                                </a>
+                                <a href="https://wa.me/917798977519?text=Hello%20S%20K%20Das,%20I%20saw%20the%20Bidya%20Odissi%20Dance%20Academy%20website%20and%20would%20like%20to%20discuss%20a%20project."
+                                   target="_blank" rel="noopener noreferrer"
+                                   title="WhatsApp Developer on 07798977519"
+                                   class="dev-number-pill light-pass px-3 py-2 rounded-xl inline-flex items-center gap-1.5 text-emerald-300 text-xs font-bold uppercase tracking-wider">
+                                    <i class="fa-brands fa-whatsapp text-base text-emerald-400"></i>
+                                    <span>Chat</span>
+                                </a>
+                            </div>
+
+                            <!-- Secondary Number: 8277754614 (Direct Call) -->
+                            <a href="tel:+918277754614"
+                               title="Call Developer S K Das: 8277754614"
+                               class="dev-number-pill light-pass px-4 py-2 rounded-xl inline-flex items-center gap-2">
+                                <i class="fa-solid fa-headset text-amber-400 text-xs"></i>
+                                <span class="text-xs sm:text-sm font-cyber-luxury font-bold text-amber-200 tracking-[0.14em]">Contact: 8277754614</span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================================================
+         COMPLETE INTERACTIVE JAVASCRIPT ENGINE
+         ========================================================================== -->
+    <script>
+        /* --------------------------------------------------------------------------
+           0. CONFIGURABLE SOCIAL MEDIA URLS & CUSTOM SVG ODISSI FALLBACK GENERATOR
+              (Guarantees zero broken images and zero non-Odissi photos)
+           -------------------------------------------------------------------------- */
+        const SOCIAL_CONFIG = {
+            facebook: "https://facebook.com",
+            instagram: "https://instagram.com",
+            twitter: "https://x.com",
+            youtube: "#videos",
+            whatsapp: "https://wa.me/918277754614"
+        };
+
+        document.getElementById('floating-fb').href = SOCIAL_CONFIG.facebook;
+        document.getElementById('floating-ig').href = SOCIAL_CONFIG.instagram;
+        document.getElementById('floating-x').href = SOCIAL_CONFIG.twitter;
+        document.getElementById('floating-yt').href = SOCIAL_CONFIG.youtube;
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Highlight & Smooth Scroll to Consultation / Admission Form when clicking Orange Card
+        window.highlightConsultationForm = function(e) {
+            e.preventDefault();
+            const admSection = document.getElementById('admission');
+            const admCard = document.getElementById('admission-form-card');
+            const studentInput = document.getElementById('adm-student');
+            if (admSection) {
+                admSection.scrollIntoView({ behavior: 'smooth' });
+            }
+            if (admCard) {
+                admCard.classList.add('ring-4', 'ring-amber-400', 'shadow-[0_0_50px_rgba(245,220,134,0.65)]');
+                setTimeout(() => {
+                    if (studentInput) studentInput.focus({ preventScroll: true });
+                }, 650);
+                setTimeout(() => {
+                    admCard.classList.remove('ring-4', 'ring-amber-400', 'shadow-[0_0_50px_rgba(245,220,134,0.65)]');
+                }, 2600);
+            }
+        };
+
+        // Custom SVG Odissi Art Generator if any external image ever fails to load
+        window.createOdissiFallbackSVG = function(titleText) {
+            const safeTitle = (titleText || 'Classical Odissi Art').replace(/[<>&"']/g, '');
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+                <defs>
+                    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+                        <stop offset="0%" stop-color="#47101c"/>
+                        <stop offset="60%" stop-color="#22060b"/>
+                        <stop offset="100%" stop-color="#0d0204"/>
+                    </radialGradient>
+                    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#fff2b2"/>
+                        <stop offset="50%" stop-color="#d4af37"/>
+                        <stop offset="100%" stop-color="#8a620a"/>
+                    </linearGradient>
+                </defs>
+                <rect width="800" height="1000" fill="url(#bg)"/>
+                <circle cx="400" cy="430" r="240" fill="none" stroke="url(#gold)" stroke-width="2" stroke-dasharray="8 6" opacity="0.5"/>
+                <circle cx="400" cy="430" r="190" fill="none" stroke="url(#gold)" stroke-width="1.5" opacity="0.4"/>
+                <!-- Stylized Odissi Tribhangi Dancer Silhouette & Mukoot -->
+                <path d="M400 190 L412 245 L388 245 Z" fill="url(#gold)"/>
+                <circle cx="400" cy="275" r="28" fill="url(#gold)"/>
+                <path d="M350 275 Q400 220 450 275" fill="none" stroke="url(#gold)" stroke-width="4"/>
+                <path d="M395 305 C360 355, 435 420, 385 495 C355 545, 440 610, 390 685" fill="none" stroke="url(#gold)" stroke-width="18" stroke-linecap="round"/>
+                <path d="M380 340 C310 315, 290 260, 260 245" fill="none" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+                <path d="M405 345 C465 370, 495 330, 535 300" fill="none" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+                <text x="400" y="820" text-anchor="middle" fill="url(#gold)" font-family="Georgia, serif" font-size="34" font-weight="bold">${safeTitle}</text>
+                <text x="400" y="865" text-anchor="middle" fill="#e6ccb2" font-family="sans-serif" font-size="18" letter-spacing="5">BIDYA ODISSI DANCE ACADEMY</text>
+            </svg>`;
+            return "data:image/svg+xml;utf8," + encodeURIComponent(svg);
+        };
+
+        /* --------------------------------------------------------------------------
+           1. PRELOADER DISMISSAL
+           -------------------------------------------------------------------------- */
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            setTimeout(() => {
+                preloader.style.opacity = '0';
+                setTimeout(() => preloader.style.display = 'none', 700);
+            }, 450);
+        });
+
+        /* --------------------------------------------------------------------------
+           2. FIXED DARK MODE & LIGHT MODE CONTROLLER WITH LOCALSTORAGE
+           -------------------------------------------------------------------------- */
+        const htmlEl = document.documentElement;
+        const themeBtn = document.getElementById('theme-toggle-btn');
+        const themeIcon = document.getElementById('theme-toggle-icon');
+        const themeLabel = document.getElementById('theme-toggle-label');
+
+        function applyTheme(mode) {
+            htmlEl.setAttribute('data-theme', mode);
+            localStorage.setItem('bidya_odishi_theme', mode);
+            if (mode === 'light') {
+                themeIcon.className = 'fa-solid fa-moon text-sm';
+                themeLabel.textContent = 'Dark Mode';
+            } else {
+                themeIcon.className = 'fa-solid fa-sun text-sm';
+                themeLabel.textContent = 'Light Mode';
+            }
+        }
+
+        const savedTheme = localStorage.getItem('bidya_odishi_theme') || 'dark';
+        applyTheme(savedTheme);
+
+        themeBtn.addEventListener('click', () => {
+            const current = htmlEl.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+            applyTheme(current);
+        });
+
+        /* --------------------------------------------------------------------------
+           3. MOBILE MENU TOGGLE
+           -------------------------------------------------------------------------- */
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileIcon = document.getElementById('mobile-menu-icon');
+
+        mobileBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.toggle('hidden');
+            mobileIcon.className = isHidden ? 'fa-solid fa-bars text-lg' : 'fa-solid fa-xmark text-lg';
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileIcon.className = 'fa-solid fa-bars text-lg';
+            });
+        });
+
+        /* --------------------------------------------------------------------------
+           4. CINEMATIC MULTI-SLIDE HERO SHOWCASE & ROTATING TAGLINES
+           -------------------------------------------------------------------------- */
+        const heroSlides = Array.from(document.querySelectorAll('.hero-slide'));
+        const heroDotsContainer = document.getElementById('hero-dots');
+        const heroSlideTitle = document.getElementById('hero-slide-title');
+        const heroSlideSubtitle = document.getElementById('hero-slide-subtitle');
+        const heroCardMainImg = document.getElementById('hero-card-main-img');
+        const heroCardMainCaption = document.getElementById('hero-card-main-caption');
+        let currentHeroIndex = 0;
+
+        // Build Slide Dots
+        heroSlides.forEach((_, idx) => {
+            const dot = document.createElement('button');
+            dot.type = 'button';
+            dot.setAttribute('aria-label', `Slide ${idx + 1}`);
+            dot.className = idx === 0
+                ? 'w-8 h-2 rounded-full bg-amber-400 transition-all'
+                : 'w-2.5 h-2 rounded-full bg-white/40 hover:bg-amber-300 transition-all';
+            dot.addEventListener('click', () => window.setHeroSlide(idx));
+            heroDotsContainer.appendChild(dot);
+        });
+
+        window.setHeroSlide = function(index) {
+            heroSlides[currentHeroIndex].classList.remove('active');
+            currentHeroIndex = (index + heroSlides.length) % heroSlides.length;
+            const activeSlide = heroSlides[currentHeroIndex];
+            activeSlide.classList.add('active');
+
+            const title = activeSlide.getAttribute('data-title');
+            const subtitle = activeSlide.getAttribute('data-subtitle');
+            const imgSrc = activeSlide.querySelector('img').src;
+
+            heroSlideTitle.textContent = title;
+            heroSlideSubtitle.textContent = subtitle;
+            heroCardMainImg.src = imgSrc;
+            heroCardMainCaption.textContent = title;
+
+            Array.from(heroDotsContainer.children).forEach((dot, idx) => {
+                dot.className = idx === currentHeroIndex
+                    ? 'w-8 h-2 rounded-full bg-amber-400 transition-all'
+                    : 'w-2.5 h-2 rounded-full bg-white/40 hover:bg-amber-300 transition-all';
+            });
+        };
+
+        document.getElementById('hero-next').addEventListener('click', () => window.setHeroSlide(currentHeroIndex + 1));
+        document.getElementById('hero-prev').addEventListener('click', () => window.setHeroSlide(currentHeroIndex - 1));
+
+        setInterval(() => {
+            window.setHeroSlide(currentHeroIndex + 1);
+        }, 5500);
+
+        // Animated Hero Taglines
+        const heroTaglines = [
+            '"Where Tradition Becomes an Art"',
+            '"Feel the Rhythm of Odisha"',
+            '"Preserving Heritage Through Dance"',
+            '"Grace. Expression. Devotion."',
+            '"Discover the Divine Beauty of Odissi"'
+        ];
+        let taglineIdx = 0;
+        const heroTaglineEl = document.getElementById('hero-tagline');
+        setInterval(() => {
+            heroTaglineEl.style.opacity = '0';
+            heroTaglineEl.style.transform = 'translateY(8px)';
+            setTimeout(() => {
+                taglineIdx = (taglineIdx + 1) % heroTaglines.length;
+                heroTaglineEl.textContent = heroTaglines[taglineIdx];
+                heroTaglineEl.style.opacity = '1';
+                heroTaglineEl.style.transform = 'translateY(0)';
+            }, 420);
+        }, 3800);
+
+        /* --------------------------------------------------------------------------
+           5. RENDER 8 AUTHENTIC ODISSI DANCE PROGRAM CARDS
+           -------------------------------------------------------------------------- */
+        const DANCE_PROGRAMS = [
+            {
+                title: "Beginner Odissi Classes",
+                badge: "Foundation",
+                img: "https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_Performance_DS.jpg",
+                desc: "Introduction to Bhumi Pranam, basic Chowka and Tribhangi postures, fundamental stepping, and rhythmic awareness."
+            },
+            {
+                title: "Intermediate Odissi Training",
+                badge: "Progressive",
+                img: "https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_dance_performance.jpg",
+                desc: "Training in Mangalacharan, Batu Nrutya, Chari footwork variations, and foundational Raga Pallavi items."
+            },
+            {
+                title: "Advanced Odissi Training",
+                badge: "Senior Repertoire",
+                img: "https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_Dancer.jpg",
+                desc: "Mastery of complex Pallavis, Ashtapadi Abhinaya, Moksha, and solo concert repertoire presentation."
+            },
+            {
+                title: "Traditional Mudra Practice",
+                badge: "Hasta Grammar",
+                img: "https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_mudra.jpg",
+                desc: "Detailed study of Asamyuta, Samyuta, and Nrutta Hastas from classical texts with expressive application."
+            },
+            {
+                title: "Abhinaya and Expressions",
+                badge: "Bhava & Rasa",
+                img: "https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_dancer.jpg",
+                desc: "Master Navarasa facial expressions, eye movements (Drishti Bheda), and devotional storytelling."
+            },
+            {
+                title: "Individual Dance Training",
+                badge: "1-on-1 Mentorship",
+                img: "https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_dancer_at_Konark.jpg",
+                desc: "Personalized one-on-one sessions with the Guru for dedicated posture refinement and exam or concert readiness."
+            },
+            {
+                title: "Cultural Dance Workshops",
+                badge: "Heritage Intensive",
+                img: "https://commons.wikimedia.org/wiki/Special:FilePath/Konark_Sun_Temple_Wheel.jpg",
+                desc: "Immersive workshops on Mardala Tala theory, Odissi temple iconography, and traditional Aharya costume styling."
+            },
+            {
+                title: "Stage Performance Preparation",
+                badge: "Concert Craft",
+                img: "https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_classical_dance.jpg",
+                desc: "Rehearsals, stage space geometry, lighting coordination, and full-costume dress rehearsals for public recitals."
+            }
+        ];
+
+        const programsGrid = document.getElementById('programs-grid');
+        programsGrid.innerHTML = DANCE_PROGRAMS.map(prog => {
+            const waText = encodeURIComponent(`Namaste Bidya Odissi Dance Academy, I would like to enquire about ${prog.title}.`);
+            return `
+                <article class="program-card rounded-3xl overflow-hidden theme-glass flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-black">
+                            <img src="${prog.img}"
+                                 onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('${prog.title}');"
+                                 alt="${prog.title} at Bidya Odissi Dance Academy"
+                                 class="w-full h-full object-cover object-top hover:scale-110 transition duration-700"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent"></div>
+                            <span class="absolute bottom-3 left-4 px-3 py-1 rounded-full bg-black/75 border border-amber-400/50 text-[10px] uppercase tracking-widest text-amber-300 font-semibold">
+                                ${prog.badge}
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif-luxury text-2xl font-bold theme-heading mb-2">${prog.title}</h3>
+                            <p class="text-xs sm:text-sm theme-text-secondary leading-relaxed">${prog.desc}</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <a href="https://wa.me/918277754614?text=${waText}"
+                           target="_blank" rel="noopener noreferrer"
+                           class="w-full py-3 px-4 rounded-xl btn-gold-luxury text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            <span>Enquire Now</span>
+                        </a>
+                    </div>
+                </article>
+            `;
+        }).join('');
+
+        /* --------------------------------------------------------------------------
+           6. 10-ITEM 3D CIRCULAR GLASS GALLERY ENGINE + LIGHTBOX
+           -------------------------------------------------------------------------- */
+        const GALLERY_ITEMS = [
+            { title: "Tribhangi Pose", tag: "Classical Stance", desc: "Iconic three-bend posture of classical Odissi dance.", img: "https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_Performance_DS.jpg" },
+            { title: "Chowka Position", tag: "Sacred Foundation", desc: "Symmetrical square stance symbolizing Lord Jagannath.", img: "https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_dance_performance.jpg" },
+            { title: "Classical Hand Mudras", tag: "Hasta Viniyoga", desc: "Expressive hand gestures communicating sacred poetry.", img: "https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_mudra.jpg" },
+            { title: "Abhinaya & Bhava", tag: "Devotional Expression", desc: "Subtle eye and facial expressions depicting Radha-Krishna leela.", img: "https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_Dancer.jpg" },
+            { title: "Traditional Odissi Costume", tag: "Sambalpuri Silk", desc: "Handwoven Odisha patta saree pleated into a fan silhouette.", img: "https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_dancer.jpg" },
+            { title: "Konark Festival Recital", tag: "Stage Performance", desc: "Classical Odissi recital against grand temple backdrops.", img: "https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_dancer_at_Konark.jpg" },
+            { title: "Lyrical Pallavi", tag: "Rhythm & Grace", desc: "Pure dance elaboration weaving melody and rhythmic patterns.", img: "https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_classical_dance.jpg" },
+            { title: "Konark Chakra Heritage", tag: "Odisha Architecture", desc: "The timeless sun wheel inspiring Odissi rhythmic cycles.", img: "https://commons.wikimedia.org/wiki/Special:FilePath/Konark_Sun_Temple_Wheel.jpg" },
+            { title: "Mukteswar Temple Arch", tag: "Sculptural Lineage", desc: "10th-century Kalinga temple carvings of Odissi dancers.", img: "https://commons.wikimedia.org/wiki/Special:FilePath/Mukteswar_temple_Bhubaneswar.jpg" },
+            { title: "Sun Temple Natamandira", tag: "Sacred Dance Hall", desc: "Ancient pillared hall where temple dancers offered Nritya Seva.", img: "https://commons.wikimedia.org/wiki/Special:FilePath/Konark_Sun_Temple_Front_View.jpg" }
+        ];
+
+        const galleryRing = document.getElementById('gallery-ring');
+        const galleryViewport = document.getElementById('gallery-viewport');
+        let galleryRotation = 0;
+        let galleryAutoRotate = true;
+        let isGalleryDragging = false;
+        let dragStartX = 0;
+
+        galleryRing.innerHTML = GALLERY_ITEMS.map((item, index) => `
+            <div class="gallery-item-3d light-pass" data-index="${index}">
+                <img src="${item.img}"
+                     onerror="this.onerror=null;this.src=window.createOdissiFallbackSVG('${item.title}');"
+                     alt="${item.title} - ${item.desc}"
+                     class="w-full h-full object-cover pointer-events-none">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4 pointer-events-none">
+                    <span class="text-[9px] uppercase tracking-[0.22em] text-amber-300 font-semibold">${item.tag}</span>
+                    <h3 class="font-serif-luxury text-xl font-bold text-white leading-tight">${item.title}</h3>
+                    <p class="text-[11px] text-gray-300 line-clamp-2 mt-0.5">${item.desc}</p>
+                </div>
+            </div>
+        `).join('');
+
+        const galleryCards = Array.from(galleryRing.querySelectorAll('.gallery-item-3d'));
+
+        function layout3DGallery() {
+            const count = galleryCards.length;
+            const isMobile = window.innerWidth < 640;
+            const radius = isMobile ? 310 : 450;
+            galleryCards.forEach((card, i) => {
+                const angleDeg = (360 / count) * i;
+                card.style.transform = `rotateY(${angleDeg}deg) translateZ(${radius}px)`;
+            });
+        }
+        layout3DGallery();
+        window.addEventListener('resize', layout3DGallery);
+
+        function animate3DGallery() {
+            if (galleryAutoRotate && !isGalleryDragging) {
+                galleryRotation -= 0.18;
+                galleryRing.style.transform = `rotateY(${galleryRotation}deg)`;
+            }
+            requestAnimationFrame(animate3DGallery);
+        }
+        requestAnimationFrame(animate3DGallery);
+
+        // Gallery Controls
+        document.getElementById('gallery-left-btn').addEventListener('click', () => {
+            galleryRotation += 36;
+            galleryRing.style.transform = `rotateY(${galleryRotation}deg)`;
+        });
+        document.getElementById('gallery-right-btn').addEventListener('click', () => {
+            galleryRotation -= 36;
+            galleryRing.style.transform = `rotateY(${galleryRotation}deg)`;
+        });
+        const pauseBtn = document.getElementById('gallery-pause-btn');
+        pauseBtn.addEventListener('click', () => {
+            galleryAutoRotate = !galleryAutoRotate;
+            document.getElementById('gallery-pause-icon').className = galleryAutoRotate
+                ? 'fa-solid fa-pause mr-1.5 theme-gold'
+                : 'fa-solid fa-play mr-1.5 theme-gold';
+            document.getElementById('gallery-pause-text').textContent = galleryAutoRotate ? 'Pause' : 'Resume';
+        });
+
+        // Drag & Touch Swipe
+        galleryViewport.addEventListener('mouseenter', () => { if (!isGalleryDragging) galleryAutoRotate = false; });
+        galleryViewport.addEventListener('mouseleave', () => { isGalleryDragging = false; galleryAutoRotate = true; });
+
+        galleryViewport.addEventListener('mousedown', e => {
+            isGalleryDragging = true;
+            dragStartX = e.clientX;
+        });
+        window.addEventListener('mousemove', e => {
+            if (!isGalleryDragging) return;
+            const dx = e.clientX - dragStartX;
+            dragStartX = e.clientX;
+            galleryRotation += dx * 0.35;
+            galleryRing.style.transform = `rotateY(${galleryRotation}deg)`;
+        });
+        window.addEventListener('mouseup', () => { isGalleryDragging = false; });
+
+        galleryViewport.addEventListener('touchstart', e => {
+            isGalleryDragging = true;
+            dragStartX = e.touches[0].clientX;
+        }, { passive: true });
+        galleryViewport.addEventListener('touchmove', e => {
+            if (!isGalleryDragging) return;
+            const dx = e.touches[0].clientX - dragStartX;
+            dragStartX = e.touches[0].clientX;
+            galleryRotation += dx * 0.4;
+            galleryRing.style.transform = `rotateY(${galleryRotation}deg)`;
+        }, { passive: true });
+        galleryViewport.addEventListener('touchend', () => { isGalleryDragging = false; });
+
+        // Lightbox Modal
+        const lightboxModal = document.getElementById('lightbox-modal');
+        galleryCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const idx = Number(card.getAttribute('data-index'));
+                const item = GALLERY_ITEMS[idx];
+                const renderedImg = card.querySelector('img').src;
+                document.getElementById('lightbox-image').src = renderedImg;
+                document.getElementById('lightbox-tag').textContent = item.tag;
+                document.getElementById('lightbox-title').textContent = item.title;
+                document.getElementById('lightbox-desc').textContent = item.desc;
+                lightboxModal.classList.remove('hidden');
+                lightboxModal.classList.add('flex');
+            });
+        });
+
+        document.getElementById('lightbox-close').addEventListener('click', () => {
+            lightboxModal.classList.add('hidden');
+            lightboxModal.classList.remove('flex');
+        });
+        lightboxModal.addEventListener('click', e => {
+            if (e.target === lightboxModal) {
+                lightboxModal.classList.add('hidden');
+                lightboxModal.classList.remove('flex');
+            }
+        });
+
+        /* --------------------------------------------------------------------------
+           7. CINEMATIC VIDEO PLAYER CONTROLS & CUSTOM MP4 LOADER
+           -------------------------------------------------------------------------- */
+        const videoPlayer = document.getElementById('academy-video-player');
+        const videoCenterPlay = document.getElementById('video-center-play');
+        const videoPlayBtn = document.getElementById('video-play-btn');
+        const videoBtnLabel = document.getElementById('video-btn-label');
+        const videoMuteBtn = document.getElementById('video-mute-btn');
+        const videoMuteIcon = document.getElementById('video-mute-icon');
+        const videoFullscreenBtn = document.getElementById('video-fullscreen-btn');
+
+        function toggleVideoPlay() {
+            if (videoPlayer.paused) {
+                videoPlayer.play().then(() => {
+                    videoCenterPlay.classList.add('opacity-0', 'pointer-events-none');
+                    videoBtnLabel.textContent = 'Pause';
+                }).catch(() => {});
+            } else {
+                videoPlayer.pause();
+                videoCenterPlay.classList.remove('opacity-0', 'pointer-events-none');
+                videoBtnLabel.textContent = 'Play';
+            }
+        }
+
+        videoCenterPlay.addEventListener('click', toggleVideoPlay);
+        videoPlayBtn.addEventListener('click', toggleVideoPlay);
+        videoPlayer.addEventListener('click', toggleVideoPlay);
+
+        videoMuteBtn.addEventListener('click', () => {
+            videoPlayer.muted = !videoPlayer.muted;
+            videoMuteIcon.className = videoPlayer.muted
+                ? 'fa-solid fa-volume-xmark mr-1.5'
+                : 'fa-solid fa-volume-high mr-1.5';
+        });
+
+        const videoFrameContainer = document.getElementById('video-frame-container');
+        let isTheaterFallback = false;
+
+        function toggleTheaterFallback() {
+            isTheaterFallback = !isTheaterFallback;
+            videoFrameContainer.classList.toggle('video-theater-fallback', isTheaterFallback);
+            videoFullscreenBtn.innerHTML = isTheaterFallback
+                ? '<i class="fa-solid fa-compress mr-1.5 theme-gold"></i>Exit Fullscreen'
+                : '<i class="fa-solid fa-expand mr-1.5 theme-gold"></i>Fullscreen';
+        }
+
+        videoFullscreenBtn.addEventListener('click', async () => {
+            if (isTheaterFallback) {
+                toggleTheaterFallback();
+                return;
+            }
+            if (document.fullscreenElement) {
+                try {
+                    await document.exitFullscreen();
+                } catch (err) {
+                    toggleTheaterFallback();
+                }
+                return;
+            }
+            try {
+                if (videoPlayer.requestFullscreen) {
+                    const fsPromise = videoPlayer.requestFullscreen();
+                    if (fsPromise !== undefined) {
+                        await fsPromise;
+                    }
+                } else if (videoPlayer.webkitRequestFullscreen) {
+                    videoPlayer.webkitRequestFullscreen();
+                } else {
+                    toggleTheaterFallback();
+                }
+            } catch (err) {
+                // Gracefully fall back to in-window theater fullscreen when blocked by iframe permissions policy
+                toggleTheaterFallback();
+            }
+        });
+
+        // Replace video with uploaded MP4
+        document.getElementById('video-file-upload').addEventListener('change', e => {
+            const file = e.target.files[0];
+            if (file) {
+                const fileURL = URL.createObjectURL(file);
+                videoPlayer.src = fileURL;
+                videoPlayer.load();
+                toggleVideoPlay();
+            }
+        });
+
+        // Replace video with custom URL
+        document.getElementById('load-url-btn').addEventListener('click', () => {
+            const customUrl = document.getElementById('custom-video-url').value.trim();
+            if (customUrl) {
+                videoPlayer.src = customUrl;
+                videoPlayer.load();
+                toggleVideoPlay();
+            }
+        });
+
+        /* --------------------------------------------------------------------------
+           8. ADMISSION ENQUIRY FORM VALIDATION & WHATSAPP / EMAIL SUBMISSION
+           -------------------------------------------------------------------------- */
+        const feedbackEl = document.getElementById('form-feedback');
+
+        function showFeedback(msg, isError) {
+            feedbackEl.textContent = msg;
+            feedbackEl.className = isError
+                ? 'p-4 rounded-xl text-sm font-medium border bg-red-950/80 border-red-400 text-red-200 block'
+                : 'p-4 rounded-xl text-sm font-medium border bg-emerald-950/80 border-emerald-400 text-emerald-200 block';
+        }
+
+        function collectAdmissionData() {
+            const student = document.getElementById('adm-student').value.trim();
+            const guardian = document.getElementById('adm-guardian').value.trim();
+            const phone = document.getElementById('adm-phone').value.trim();
+            const email = document.getElementById('adm-email').value.trim();
+            const age = document.getElementById('adm-age').value.trim();
+            const program = document.getElementById('adm-program').value;
+            const timing = document.getElementById('adm-timing').value;
+            const message = document.getElementById('adm-message').value.trim();
+
+            if (!student || !phone || !email || !age || !program) {
+                showFeedback('Please complete all required fields (*) including Student Name, Contact Number, Email, Age, and Preferred Program.', true);
+                return null;
+            }
+            return { student, guardian, phone, email, age, program, timing, message };
+        }
+
+        document.getElementById('submit-whatsapp-btn').addEventListener('click', () => {
+            const data = collectAdmissionData();
+            if (!data) return;
+            showFeedback('Opening WhatsApp with your pre-filled admission enquiry to +91 8277754614...', false);
+            const text = [
+                'Namaste *Bidya Odissi Dance Academy*,',
+                '',
+                '*New Student Admission Enquiry*',
+                `• Student Name: ${data.student}`,
+                `• Parent/Guardian: ${data.guardian || 'N/A'}`,
+                `• Contact Number: ${data.phone}`,
+                `• Email: ${data.email}`,
+                `• Student Age: ${data.age}`,
+                `• Preferred Program: ${data.program}`,
+                `• Preferred Timing: ${data.timing}`,
+                `• Message: ${data.message || 'None'}`
+            ].join('\n');
+            window.open(`https://wa.me/918277754614?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+        });
+
+        document.getElementById('submit-email-btn').addEventListener('click', () => {
+            const data = collectAdmissionData();
+            if (!data) return;
+            showFeedback('Opening your email application addressed to SASHIKANTADAS@GMAIL.COM...', false);
+            const subject = `Admission Enquiry: ${data.student} — Bidya Odissi Dance Academy`;
+            const body = [
+                'Namaste Bidya Odissi Dance Academy,',
+                '',
+                'Please find below the student admission enquiry details:',
+                `Student Name: ${data.student}`,
+                `Parent/Guardian Name: ${data.guardian || 'N/A'}`,
+                `Contact Number: ${data.phone}`,
+                `Email Address: ${data.email}`,
+                `Age: ${data.age}`,
+                `Preferred Dance Program: ${data.program}`,
+                `Preferred Timing: ${data.timing}`,
+                `Message: ${data.message || 'None'}`,
+                '',
+                'Warm regards,',
+                data.student
+            ].join('\n');
+            window.location.href = `mailto:SASHIKANTADAS@GMAIL.COM?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+
+        // Quick Contact Section Handler
+        window.sendQuickContact = function(channel) {
+            const name = document.getElementById('quick-name').value.trim() || 'Visitor';
+            const msg = document.getElementById('quick-message').value.trim() || 'I would like to know more about Odissi classes at Bidya Odissi Dance Academy.';
+            if (channel === 'whatsapp') {
+                const text = `Namaste Bidya Odissi Dance Academy, I am ${name}. ${msg}`;
+                window.open(`https://wa.me/918277754614?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+            } else {
+                const subject = `Enquiry from ${name} — Bidya Odissi Dance Academy`;
+                window.location.href = `mailto:SASHIKANTADAS@GMAIL.COM?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(msg)}`;
+            }
+        };
+
+        // Interactive 3D Mouse Tilt on Developer Credit Card
+        const devCard = document.getElementById('dev-credit-card');
+        if (devCard) {
+            devCard.addEventListener('mousemove', e => {
+                const rect = devCard.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                const rotateX = (-y / (rect.height / 2)) * 10;
+                const rotateY = (x / (rect.width / 2)) * 10;
+                devCard.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px) scale(1.03)`;
+            });
+            devCard.addEventListener('mouseleave', () => {
+                devCard.style.transform = '';
+            });
+        }
+
+        /* --------------------------------------------------------------------------
+           9. SCROLL REVEAL & GOLDEN TEMPLE DUST PARTICLES
+           -------------------------------------------------------------------------- */
+        const revealObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('revealed');
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.reveal-up').forEach(el => revealObserver.observe(el));
+
+        // Subtle Golden Particles in Hero
+        const canvas = document.getElementById('hero-particles');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        for (let i = 0; i < 38; i++) {
+            particles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                r: Math.random() * 2.2 + 0.6,
+                vy: -(Math.random() * 0.35 + 0.1),
+                vx: (Math.random() - 0.5) * 0.25,
+                alpha: Math.random() * 0.65 + 0.2
+            });
+        }
+
+        function drawParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.x += p.vx;
+                p.y += p.vy;
+                if (p.y < 0) p.y = canvas.height;
+                if (p.x < 0) p.x = canvas.width;
+                if (p.x > canvas.width) p.x = 0;
+
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(245, 220, 134, ${p.alpha})`;
+                ctx.fill();
+            });
+            requestAnimationFrame(drawParticles);
+        }
+        drawParticles();
+    </script>
+</body>
+</html>
