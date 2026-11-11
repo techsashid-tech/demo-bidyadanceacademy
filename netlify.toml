@@ -1,0 +1,7 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/gemini-code-1794238911020.html"
+  to = "/"
+  status = 301
